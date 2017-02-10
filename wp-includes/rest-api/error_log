@@ -1,0 +1,4 @@
+[07-Nov-2016 18:55:04 America/Chicago] PHP Fatal error:  Class 'WP_HTTP_Response' not found in /home/vilandtr/public_html/wp-includes/rest-api/class-wp-rest-response.php on line 17
+[07-Nov-2016 20:21:16 America/Chicago] PHP Fatal error:  Class 'WP_HTTP_Response' not found in /home/vilandtr/public_html/wp-includes/rest-api/class-wp-rest-response.php on line 17
+[15-Nov-2016 07:12:47 America/Chicago] PHP Fatal error:  Class 'WP_HTTP_Response' not found in /home/vilandtr/public_html/wp-includes/rest-api/class-wp-rest-response.php on line 17
+[26-Nov-2016 12:19:02 America/Chicago] PHP Fatal error:  Class 'WP_HTTP_Response' not found in /home/vilandtr/public_html/wp-includes/rest-api/class-wp-rest-response.php on line 17

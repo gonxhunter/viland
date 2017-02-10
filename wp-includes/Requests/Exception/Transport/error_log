@@ -1,0 +1,2 @@
+[07-Nov-2016 19:14:03 America/Chicago] PHP Fatal error:  Class 'Requests_Exception_Transport' not found in /home/vilandtr/public_html/wp-includes/Requests/Exception/Transport/cURL.php on line 3
+[08-Nov-2016 14:47:54 America/Chicago] PHP Fatal error:  Class 'Requests_Exception_Transport' not found in /home/vilandtr/public_html/wp-includes/Requests/Exception/Transport/cURL.php on line 3

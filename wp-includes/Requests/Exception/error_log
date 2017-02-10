@@ -1,0 +1,6 @@
+[07-Nov-2016 19:10:31 America/Chicago] PHP Fatal error:  Class 'Requests_Exception' not found in /home/vilandtr/public_html/wp-includes/Requests/Exception/HTTP.php on line 13
+[07-Nov-2016 19:11:15 America/Chicago] PHP Fatal error:  Class 'Requests_Exception' not found in /home/vilandtr/public_html/wp-includes/Requests/Exception/Transport.php on line 3
+[07-Nov-2016 22:53:47 America/Chicago] PHP Fatal error:  Class 'Requests_Exception' not found in /home/vilandtr/public_html/wp-includes/Requests/Exception/Transport.php on line 3
+[08-Nov-2016 14:44:12 America/Chicago] PHP Fatal error:  Class 'Requests_Exception' not found in /home/vilandtr/public_html/wp-includes/Requests/Exception/HTTP.php on line 13
+[15-Nov-2016 07:18:37 America/Chicago] PHP Fatal error:  Class 'Requests_Exception' not found in /home/vilandtr/public_html/wp-includes/Requests/Exception/Transport.php on line 3
+[28-Nov-2016 03:19:20 America/Chicago] PHP Fatal error:  Class 'Requests_Exception' not found in /home/vilandtr/public_html/wp-includes/Requests/Exception/Transport.php on line 3
