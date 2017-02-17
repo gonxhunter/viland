@@ -140,6 +140,10 @@ if (!function_exists('sutunam_menu')) {
     }
 }
 
+/**
+ * Add testimonials
+ */
+require_once( get_template_directory() . '/lib/testimonials.php' );
 
 add_action( 'wp_enqueue_scripts','stn_frontend_scripts' );
 add_filter( 'wp_default_editor', create_function('', 'return "tinymce";') );

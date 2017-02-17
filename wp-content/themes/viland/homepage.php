@@ -71,7 +71,74 @@ get_header(); ?>
         <?php endwhile; ?>
         </ul>
         <?php wp_reset_query(); ?>
-        <button class="view-all-tours"> View All</button>
+        <a class="view-all-tours" href="#"> View All</a>
+    </div>
+
+    <div class="categories-tour">
+        <?php
+        $args = array(
+            'number'     => 6,
+            'orderby'    => 'date',
+            'order'      => 'DESC',
+            'hide_empty' => 1
+        );
+        $product_categories = get_terms( 'product_cat', $args );
+        echo '<ul class=categories-pagkage>';
+        foreach ($product_categories as $cat){
+            echo '<li class="item cat-item">';
+            echo '<a href="'.$cat->slug.'">';
+            echo $cat->name;
+            $thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );
+            $image = wp_get_attachment_url( $thumbnail_id );
+            if ( $image ) {
+                echo '<img src="' . $image . '" alt="" />';
+            }
+            echo '<span class="link-category">View tours</span>';
+            echo '</a></li>';
+        }
+        echo '<a class="view-all-tours" href="#"> View All</a>';
+        echo '</ul>';
+        ?>
+    </div>
+
+    <div class="testimonial-homepage">
+        <h2>Testimonials</h2>
+        <?php
+        $args = array(
+            'post_type' => 'testimonials',
+            'stock' => 1,
+            'posts_per_page' => 4,
+            'orderby' =>'date',
+            'order' => 'DESC' );
+        $loop = new WP_Query( $args );
+        ?>
+        <ul class="popular-products">
+            <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+                <li class="item product">
+                    <a id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                        <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; ?>
+                        <div class="post-excerpt">
+                            <?php echo the_content(); ?>
+                        </div>
+                        <?php $client_name = get_post_meta(get_the_ID(), 'client_name', true);
+                        if (!empty($client_name)):
+                            ?>
+                            <div class="client_name">
+                                <?php echo $client_name; ?>
+                            </div>
+                        <?php endif; ?>
+                        <?php $company = get_post_meta(get_the_ID(), 'location', true);
+                        if (!empty($company)):
+                            ?>
+                            <div class="company">
+                                <?php echo $company; ?>
+                            </div>
+                        <?php endif; ?>
+                    </a>
+                </li>
+            <?php endwhile; ?>
+        </ul>
+        <?php wp_reset_query(); ?>
     </div>
 </div>
 <?php get_footer(); ?>
