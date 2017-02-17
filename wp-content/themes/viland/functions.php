@@ -68,23 +68,45 @@ if (!function_exists('sutunam_theme_setup')) {
 
         // This theme uses wp_nav_menu() in two locations.
         register_nav_menus(array(
-            'top-menu' => __('Top Menu', 'sutunam'),
-            'left-menu' => __('Left Menu', 'sutunam'),
+            'top-menu' => __('Top Menu', 'sutunam')
         ));
 
         /*
-         * Create sidebar for sutunam theme
+         * Create footer for viland theme
          */
-        $sidebar = array(
-            'name' => __('Footer Sidebar', 'sutunam'),
-            'id' => 'footer-sidebar',
-            'description' => 'Footer sidebar for Cozano theme',
+        $footerBlock1 = array(
+            'name' => __('Footer Block One', 'sutunam'),
+            'id' => 'footer-block-1',
+            'description' => 'Footer block 1',
             'class' => 'footer-sidebar',
             'before_title' => '<h3 class="footer-title">',
             'after_title' => '</h3>',
 
         );
-        register_sidebar($sidebar);
+
+        register_sidebar($footerBlock1);
+
+        $footerBlock2 = array(
+            'name' => __('Footer Block Two', 'sutunam'),
+            'id' => 'footer-block-2',
+            'description' => 'Footer block 2',
+            'class' => 'footer-sidebar',
+            'before_title' => '<h3 class="footer-title">',
+            'after_title' => '</h3>',
+
+        );
+        register_sidebar($footerBlock2);
+
+        $footerBlock3 = array(
+            'name' => __('Footer Block Three', 'sutunam'),
+            'id' => 'footer-block-3',
+            'description' => 'Footer block 3',
+            'class' => 'footer-sidebar',
+            'before_title' => '<h3 class="footer-title">',
+            'after_title' => '</h3>',
+
+        );
+        register_sidebar($footerBlock3);
 
 //        $left_sidebar = array(
 //            'name' => __('Left Sidebar', 'sutunam'),
