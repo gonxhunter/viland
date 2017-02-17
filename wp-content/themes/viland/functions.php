@@ -103,6 +103,21 @@ if (!function_exists('sutunam_theme_setup')) {
     add_action('init', 'sutunam_theme_setup');
 }
 
+/**
+ * Display menu
+ */
+if (!function_exists('sutunam_menu')) {
+    function sutunam_menu($slug)
+    {
+        $menu = array(
+            'theme_location' => $slug,
+            'container' => 'nav',
+            'container_class' => $slug
+        );
+        wp_nav_menu($menu);
+    }
+}
+
 
 add_action( 'wp_enqueue_scripts','stn_frontend_scripts' );
 add_filter( 'wp_default_editor', create_function('', 'return "tinymce";') );

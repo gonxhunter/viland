@@ -46,8 +46,8 @@ $jk_options = get_option('redux_demo');
 <div id="wrapper">
 <header id="header">
     <div class="menu nav-menu">
+        <?php sutunam_menu('top-menu'); ?>
     </div>
 </header>
 <div id="container">
-    <h1>Demo</h1>
 
