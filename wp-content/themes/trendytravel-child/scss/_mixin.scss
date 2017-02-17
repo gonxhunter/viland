@@ -64,6 +64,17 @@
     filter: $value;
 }
 
+/* icon font */
+@mixin icon-font() {
+    font-family: 'Viland-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+
 /* text stroke */
 @mixin text-stroke($style) {
     -webkit-text-stroke: $style;

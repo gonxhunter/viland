@@ -1,0 +1,379 @@
+@import "icon-variables";
+
+@font-face {
+  font-family: 'Viland-icon';
+  src:  url('#{$icomoon-font-path}/Viland-icon.eot?1h2t48');
+  src:  url('#{$icomoon-font-path}/Viland-icon.eot?1h2t48#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/Viland-icon.ttf?1h2t48') format('truetype'),
+    url('#{$icomoon-font-path}/Viland-icon.woff?1h2t48') format('woff'),
+    url('#{$icomoon-font-path}/Viland-icon.svg?1h2t48#Viland-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="vi-"], [class*=" vi-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Viland-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.vi-icon-accom {
+  &:before {
+    content: $vi-icon-accom;
+  }
+}
+.vi-icon-add-basket {
+  &:before {
+    content: $vi-icon-add-basket;
+  }
+}
+.vi-icon-basket {
+  &:before {
+    content: $vi-icon-basket;
+  }
+}
+.vi-icon-bus {
+  &:before {
+    content: $vi-icon-bus;
+  }
+}
+.vi-icon-calendar {
+  &:before {
+    content: $vi-icon-calendar;
+  }
+}
+.vi-icon-cart {
+  &:before {
+    content: $vi-icon-cart;
+  }
+}
+.vi-icon-close {
+  &:before {
+    content: $vi-icon-close;
+  }
+}
+.vi-icon-cooking {
+  &:before {
+    content: $vi-icon-cooking;
+  }
+}
+.vi-icon-cross {
+  &:before {
+    content: $vi-icon-cross;
+  }
+}
+.vi-icon-des-experts {
+  &:before {
+    content: $vi-icon-des-experts;
+  }
+}
+.vi-icon-des-experts-2 {
+  &:before {
+    content: $vi-icon-des-experts-2;
+  }
+}
+.vi-icon-ex-local-guides {
+  &:before {
+    content: $vi-icon-ex-local-guides;
+  }
+}
+.vi-icon-fb {
+  &:before {
+    content: $vi-icon-fb;
+  }
+}
+.vi-icon-flight {
+  &:before {
+    content: $vi-icon-flight;
+  }
+}
+.vi-icon-gp {
+  &:before {
+    content: $vi-icon-gp;
+  }
+}
+.vi-icon-in {
+  &:before {
+    content: $vi-icon-in;
+  }
+}
+.vi-icon-lock {
+  &:before {
+    content: $vi-icon-lock;
+  }
+}
+.vi-icon-mail {
+  &:before {
+    content: $vi-icon-mail;
+  }
+}
+.vi-icon-meal {
+  &:before {
+    content: $vi-icon-meal;
+  }
+}
+.vi-icon-menu {
+  &:before {
+    content: $vi-icon-menu;
+  }
+}
+.vi-icon-mouse-down {
+  &:before {
+    content: $vi-icon-mouse-down;
+  }
+}
+.vi-icon-notice {
+  &:before {
+    content: $vi-icon-notice;
+  }
+}
+.vi-icon-paypal .path1 {
+  &:before {
+    content: $vi-icon-paypal-path1;  
+    color: rgb(53, 103, 154);
+  }
+}
+.vi-icon-paypal .path2 {
+  &:before {
+    content: $vi-icon-paypal-path2;  
+    margin-left: -1em;  
+    color: rgb(28, 55, 97);
+  }
+}
+.vi-icon-paypal .path3 {
+  &:before {
+    content: $vi-icon-paypal-path3;  
+    margin-left: -1em;  
+    color: rgb(28, 55, 97);
+  }
+}
+.vi-icon-paypal .path4 {
+  &:before {
+    content: $vi-icon-paypal-path4;  
+    margin-left: -1em;  
+    color: rgb(53, 103, 154);
+  }
+}
+.vi-icon-paypal .path5 {
+  &:before {
+    content: $vi-icon-paypal-path5;  
+    margin-left: -1em;  
+    color: rgb(28, 55, 97);
+  }
+}
+.vi-icon-paypal .path6 {
+  &:before {
+    content: $vi-icon-paypal-path6;  
+    margin-left: -1em;  
+    color: rgb(53, 103, 154);
+  }
+}
+.vi-icon-paypal .path7 {
+  &:before {
+    content: $vi-icon-paypal-path7;  
+    margin-left: -1em;  
+    color: rgb(53, 103, 154);
+  }
+}
+.vi-icon-paypal .path8 {
+  &:before {
+    content: $vi-icon-paypal-path8;  
+    margin-left: -1em;  
+    color: rgb(53, 103, 154);
+  }
+}
+.vi-icon-phone {
+  &:before {
+    content: $vi-icon-phone;
+  }
+}
+.vi-icon-pin {
+  &:before {
+    content: $vi-icon-pin;
+  }
+}
+.vi-icon-plane {
+  &:before {
+    content: $vi-icon-plane;
+  }
+}
+.vi-icon-play {
+  &:before {
+    content: $vi-icon-play;
+  }
+}
+.vi-icon-print {
+  &:before {
+    content: $vi-icon-print;
+  }
+}
+.vi-icon-pt {
+  &:before {
+    content: $vi-icon-pt;
+  }
+}
+.vi-icon-share {
+  &:before {
+    content: $vi-icon-share;
+  }
+}
+.vi-icon-skype {
+  &:before {
+    content: $vi-icon-skype;
+  }
+}
+.vi-icon-support .path1 {
+  &:before {
+    content: $vi-icon-support-path1;  
+    color: none;
+  }
+}
+.vi-icon-support .path2 {
+  &:before {
+    content: $vi-icon-support-path2;  
+    margin-left: -1em;  
+    color: rgb(9, 99, 104);
+  }
+}
+.vi-icon-support .path3 {
+  &:before {
+    content: $vi-icon-support-path3;  
+    margin-left: -1em;  
+    color: rgb(9, 99, 104);
+  }
+}
+.vi-icon-support .path4 {
+  &:before {
+    content: $vi-icon-support-path4;  
+    margin-left: -1em;  
+    color: rgb(9, 99, 104);
+  }
+}
+.vi-icon-support .path5 {
+  &:before {
+    content: $vi-icon-support-path5;  
+    margin-left: -1em;  
+    color: rgb(9, 99, 104);
+  }
+}
+.vi-icon-support .path6 {
+  &:before {
+    content: $vi-icon-support-path6;  
+    margin-left: -1em;  
+    color: rgb(9, 99, 104);
+  }
+}
+.vi-icon-support .path7 {
+  &:before {
+    content: $vi-icon-support-path7;  
+    margin-left: -1em;  
+    color: rgb(9, 99, 104);
+  }
+}
+.vi-icon-support .path8 {
+  &:before {
+    content: $vi-icon-support-path8;  
+    margin-left: -1em;  
+    color: rgb(9, 99, 104);
+  }
+}
+.vi-icon-support .path9 {
+  &:before {
+    content: $vi-icon-support-path9;  
+    margin-left: -1em;  
+    color: rgb(9, 99, 104);
+  }
+}
+.vi-icon-support .path10 {
+  &:before {
+    content: $vi-icon-support-path10;  
+    margin-left: -1em;  
+    color: rgb(9, 99, 104);
+  }
+}
+.vi-icon-support .path11 {
+  &:before {
+    content: $vi-icon-support-path11;  
+    margin-left: -1em;  
+    color: rgb(9, 99, 104);
+  }
+}
+.vi-icon-support .path12 {
+  &:before {
+    content: $vi-icon-support-path12;  
+    margin-left: -1em;  
+    color: rgb(9, 99, 104);
+  }
+}
+.vi-icon-support .path13 {
+  &:before {
+    content: $vi-icon-support-path13;  
+    margin-left: -1em;  
+    color: rgb(9, 99, 104);
+  }
+}
+.vi-icon-support .path14 {
+  &:before {
+    content: $vi-icon-support-path14;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.vi-icon-support .path15 {
+  &:before {
+    content: $vi-icon-support-path15;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.vi-icon-support .path16 {
+  &:before {
+    content: $vi-icon-support-path16;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.vi-icon-support .path17 {
+  &:before {
+    content: $vi-icon-support-path17;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.vi-icon-support .path18 {
+  &:before {
+    content: $vi-icon-support-path18;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.vi-icon-tour-guide {
+  &:before {
+    content: $vi-icon-tour-guide;
+  }
+}
+.vi-icon-tt {
+  &:before {
+    content: $vi-icon-tt;
+  }
+}
+.vi-icon-user {
+  &:before {
+    content: $vi-icon-user;
+  }
+}
+.vi-icon-yt {
+  &:before {
+    content: $vi-icon-yt;
+  }
+}
+
