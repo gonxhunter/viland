@@ -45,6 +45,9 @@ $jk_options = get_option('redux_demo');
 <body <?php body_class('no-sidebar'); ?> <?php language_attributes(); ?>>
 <div id="wrapper">
 <header id="header">
+    <div class="logo">
+        <a href="#<?php echo home_url(); ?>" title="Viland"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt=""/></a>
+    </div>
     <div class="menu nav-menu">
         <?php sutunam_menu('top-menu'); ?>
     </div>
