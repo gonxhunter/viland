@@ -1,0 +1,4 @@
+/* Custom js */
+(function($) {
+    
+})(jQuery);
