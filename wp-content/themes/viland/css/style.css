@@ -6,6 +6,30 @@
 
 /* Font style */
 
+@font-face {
+  font-family: 'AvenirNextMedium';
+  src: url("../fonts/AvenirNextMedium.eot");
+  src: url("../fonts/AvenirNextMedium.eot") format("embedded-opentype"), url("../fonts/AvenirNextMedium.woff2") format("woff2"), url("../fonts/AvenirNextMedium.woff") format("woff"), url("../fonts/AvenirNextMedium.ttf") format("truetype"), url("../fonts/AvenirNextMedium.svg#AvenirNextMedium") format("svg");
+}
+
+@font-face {
+  font-family: 'AvenirNextDemiBold';
+  src: url("../fonts/AvenirNextDemiBold.eot");
+  src: url("../fonts/AvenirNextDemiBold.eot") format("embedded-opentype"), url("../fonts/AvenirNextDemiBold.woff2") format("woff2"), url("../fonts/AvenirNextDemiBold.woff") format("woff"), url("../fonts/AvenirNextDemiBold.ttf") format("truetype"), url("../fonts/AvenirNextDemiBold.svg#AvenirNextDemiBold") format("svg");
+}
+
+@font-face {
+  font-family: 'AvenirNextDemiBoldItalic';
+  src: url("../fonts/AvenirNextDemiBoldItalic.eot");
+  src: url("../fonts/AvenirNextDemiBoldItalic.eot") format("embedded-opentype"), url("../fonts/AvenirNextDemiBoldItalic.woff2") format("woff2"), url("../fonts/AvenirNextDemiBoldItalic.woff") format("woff"), url("../fonts/AvenirNextDemiBoldItalic.ttf") format("truetype"), url("../fonts/AvenirNextDemiBoldItalic.svg#AvenirNextDemiBoldItalic") format("svg");
+}
+
+@font-face {
+  font-family: 'AvenirNextBold';
+  src: url("../fonts/AvenirNextBold.eot");
+  src: url("../fonts/AvenirNextBold.eot") format("embedded-opentype"), url("../fonts/AvenirNextBold.woff2") format("woff2"), url("../fonts/AvenirNextBold.woff") format("woff"), url("../fonts/AvenirNextBold.ttf") format("truetype"), url("../fonts/AvenirNextBold.svg#AvenirNextBold") format("svg");
+}
+
 /* Icon font */
 
 @font-face {
@@ -459,6 +483,8 @@
 
 /* font smoothing */
 
+/* font style */
+
 /* filter */
 
 /* icon font */
@@ -499,7 +525,143 @@
 
 /* General styles */
 
+/* line 3, scss/global/_general.scss */
+
+html,
+body {
+  height: 100%;
+}
+
+/* line 7, scss/global/_general.scss */
+
+body {
+  background: #ffffff;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 13, scss/global/_general.scss */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 18, scss/global/_general.scss */
+
+a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* line 21, scss/global/_general.scss */
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+/* line 26, scss/global/_general.scss */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+/* line 30, scss/global/_general.scss */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 35, scss/global/_general.scss */
+
+#wrapper {
+  min-height: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
 /* Header styles */
+
+/* line 3, scss/global/_header.scss */
+
+#header {
+  background: #10726e;
+  height: 98px;
+  padding: 0 75px;
+}
+
+/* line 7, scss/global/_header.scss */
+
+#header .logo {
+  float: left;
+  padding: 31px 0;
+}
+
+/* line 10, scss/global/_header.scss */
+
+#header .logo img {
+  width: 171px;
+}
+
+/* line 14, scss/global/_header.scss */
+
+#header .nav-menu {
+  float: left;
+  max-width: 640px;
+}
+
+/* line 17, scss/global/_header.scss */
+
+#header .nav-menu ul {
+  font-size: 0;
+}
+
+/* line 19, scss/global/_header.scss */
+
+#header .nav-menu ul li {
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+}
+
+/* line 23, scss/global/_header.scss */
+
+#header .nav-menu ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "AvenirNextBold";
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* line 30, scss/global/_header.scss */
+
+#header .nav-menu ul.sub-menu {
+  display: none;
+}
+
+/* line 33, scss/global/_header.scss */
+
+#header .nav-menu ul.sub-menu li a {
+  font-size: 15px;
+  font-family: "AvenirNextDemiBold";
+  font-style: normal;
+  font-weight: normal;
+}
 
 /* Footer styles */
 

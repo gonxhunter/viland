@@ -1,1 +1,41 @@
 /* Header styles */
+
+#header {
+    background: $bg-green;
+    height: 98px;
+    padding: 0 75px;
+    .logo {
+        float: left;
+        padding: 31px 0;
+        img {
+            width: 171px;
+        }
+    }
+    .nav-menu {
+        float: left;
+        max-width: 640px;
+        ul {
+            font-size: 0;
+            li {
+                display: inline-block;
+                vertical-align: top;
+                list-style: none;
+                a {
+                    color: $c-white;
+                    font-size: 16px;
+                    @include font-style($f-avenir-next-bold);
+                    text-transform: uppercase;
+                }
+            }
+            &.sub-menu {
+                display: none;
+                li {
+                    a {
+                        font-size: 15px;
+                        @include font-style($f-avenir-next-demibold);
+                    }
+                }
+            }
+        }
+    }
+}

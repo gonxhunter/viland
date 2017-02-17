@@ -1,2 +1,41 @@
 /* Font style */
 
+@font-face {
+    font-family: 'AvenirNextMedium';
+    src: url('../fonts/AvenirNextMedium.eot');
+    src: url('../fonts/AvenirNextMedium.eot') format('embedded-opentype'),
+    url('../fonts/AvenirNextMedium.woff2') format('woff2'),
+    url('../fonts/AvenirNextMedium.woff') format('woff'),
+    url('../fonts/AvenirNextMedium.ttf') format('truetype'),
+    url('../fonts/AvenirNextMedium.svg#AvenirNextMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirNextDemiBold';
+    src: url('../fonts/AvenirNextDemiBold.eot');
+    src: url('../fonts/AvenirNextDemiBold.eot') format('embedded-opentype'),
+    url('../fonts/AvenirNextDemiBold.woff2') format('woff2'),
+    url('../fonts/AvenirNextDemiBold.woff') format('woff'),
+    url('../fonts/AvenirNextDemiBold.ttf') format('truetype'),
+    url('../fonts/AvenirNextDemiBold.svg#AvenirNextDemiBold') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirNextDemiBoldItalic';
+    src: url('../fonts/AvenirNextDemiBoldItalic.eot');
+    src: url('../fonts/AvenirNextDemiBoldItalic.eot') format('embedded-opentype'),
+    url('../fonts/AvenirNextDemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/AvenirNextDemiBoldItalic.woff') format('woff'),
+    url('../fonts/AvenirNextDemiBoldItalic.ttf') format('truetype'),
+    url('../fonts/AvenirNextDemiBoldItalic.svg#AvenirNextDemiBoldItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirNextBold';
+    src: url('../fonts/AvenirNextBold.eot');
+    src: url('../fonts/AvenirNextBold.eot') format('embedded-opentype'),
+    url('../fonts/AvenirNextBold.woff2') format('woff2'),
+    url('../fonts/AvenirNextBold.woff') format('woff'),
+    url('../fonts/AvenirNextBold.ttf') format('truetype'),
+    url('../fonts/AvenirNextBold.svg#AvenirNextBold') format('svg');
+}

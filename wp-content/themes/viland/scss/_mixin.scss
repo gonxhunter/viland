@@ -55,6 +55,13 @@
     }
 }
 
+/* font style */
+@mixin font-style($name) {
+    font-family: $name;
+    font-style: normal;
+    font-weight: normal;
+}
+
 /* filter */
 @mixin filter($value) {
     -webkit-filter: $value;

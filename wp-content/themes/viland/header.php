@@ -46,10 +46,28 @@ $jk_options = get_option('redux_demo');
 <div id="wrapper">
 <header id="header">
     <div class="logo">
-        <a href="#<?php echo home_url(); ?>" title="Viland"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt=""/></a>
+        <a href="<?php echo home_url(); ?>" title="Viland"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt=""/></a>
     </div>
-    <div class="menu nav-menu">
+    <div class="nav-menu">
         <?php sutunam_menu('top-menu'); ?>
+    </div>
+    <div class="header-link">
+        <ul>
+            <li class="phone">
+                <i class="vi-icon-phone"></i>
+                <span>VN HOTLINE   +84 (0) 1633 744 951</span><br/>
+                <span>EN HOTLINE   +84 (0) 7452 081 173</span>
+            </li>
+            <li class="basket">
+                <a href="#"><i class="vi-icon-basket"></i></a>
+            </li>
+            <li class="user">
+                <a href="#"><i class="vi-icon-user"></i></a>
+            </li>
+            <li class="menu-toggle">
+                <a href="#">Menu<i class="vi-icon-menu"></i></a>
+            </li>
+        </ul>
     </div>
 </header>
 <div id="container">
