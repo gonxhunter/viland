@@ -4,6 +4,7 @@
     background: $bg-green;
     height: 98px;
     padding: 0 75px;
+    position: relative;
     .logo {
         float: left;
         padding: 31px 0;
@@ -14,6 +15,7 @@
     .nav-menu {
         float: left;
         max-width: 640px;
+        margin-left: 30px;
         ul {
             font-size: 0;
             li {
@@ -21,18 +23,129 @@
                 vertical-align: top;
                 list-style: none;
                 a {
+                    display: inline-block;
+                    vertical-align: top;
                     color: $c-white;
                     font-size: 16px;
                     @include font-style($f-avenir-next-bold);
                     text-transform: uppercase;
+                    padding: 38px 30px;
+                    position: relative;
+                    &:after {
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        background: none;
+                        border: 22px solid transparent;
+                        border-bottom-color: $bg-dark-green;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        margin-left: -22px;
+                        @include opacity(0);
+                        @include transition();
+                    }
+                }
+                &.hovered {
+                    > a {
+                        &:after {
+                            @include opacity(1);
+                        }
+                    }
+                    .sub-menu {
+                        z-index: 1;
+                        @include opacity(1);
+                    }
                 }
             }
             &.sub-menu {
-                display: none;
+                background: $bg-dark-green;
+                width: 100%;
+                height: auto;
+                padding: 20px 275px;
+                position: absolute;
+                left: 0;
+                top: 100%;
+                z-index: -1;
+                @include opacity(0);
+                @include transition(opacity 0.3s ease);
                 li {
+                    width: 33.333%;
+                    padding: 10px 30px;
                     a {
                         font-size: 15px;
                         @include font-style($f-avenir-next-demibold);
+                        padding: 0;
+                        &:after {
+                            background: $c-dark-green;
+                            border: none;
+                            width: 100%;
+                            height: 2px;
+                            margin: 0;
+                            bottom: -4px;
+                            left: 0;
+                        }
+                        &:hover {
+                            color: $c-dark-green;
+                            &:after {
+                                @include opacity(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-link {
+        float: right;
+        padding: 30px 0;
+        ul {
+            font-size: 0;
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                list-style: none;
+                color: $c-white;
+                font-size: 14px;
+                @include font-style($f-avenir-next-bold);
+                text-transform: uppercase;
+                a {
+                    color: $c-white;
+                }
+                .vi-icon-phone,
+                .vi-icon-basket,
+                .vi-icon-user {
+                    font-size: 28px;
+
+                }
+                .vi-icon-menu {
+                    font-size: 24px;
+                }
+                &.phone {
+                    margin-right: 35px;
+                    padding-left: 40px;
+                    position: relative;
+                    .vi-icon-phone {
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        margin-top: -14px;
+                    }
+                    span {
+                        display: block;
+                        line-height: 1.4;
+                    }
+                }
+                &.basket {
+                    margin-right: 15px;
+                }
+                &.menu-toggle {
+                    display: none;
+                    .vi-icon-menu {
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-left: 15px;
                     }
                 }
             }

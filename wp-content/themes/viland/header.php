@@ -55,8 +55,8 @@ $jk_options = get_option('redux_demo');
         <ul>
             <li class="phone">
                 <i class="vi-icon-phone"></i>
-                <span>VN HOTLINE   +84 (0) 1633 744 951</span><br/>
-                <span>EN HOTLINE   +84 (0) 7452 081 173</span>
+                <span>VN HOTLINE&nbsp;&nbsp;&nbsp;+84 (0) 1633 744 951</span>
+                <span>EN HOTLINE&nbsp;&nbsp;&nbsp;+84 (0) 7452 081 173</span>
             </li>
             <li class="basket">
                 <a href="#"><i class="vi-icon-basket"></i></a>
