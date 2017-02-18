@@ -481,6 +481,8 @@
 
 /* calculate */
 
+/* clear fix */
+
 /* font smoothing */
 
 /* font style */
@@ -599,6 +601,27 @@ ol {
   max-width: 1366px;
   margin: 0 auto;
   overflow-x: hidden;
+}
+
+/* line 46, scss/global/_general.scss */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* line 52, scss/global/_general.scss */
+
+.clear-fix:before,
+.clear-fix:after {
+  content: '';
+  display: table;
+}
+
+/* line 56, scss/global/_general.scss */
+
+.clear-fix:after {
+  clear: both;
 }
 
 /* Header styles */
