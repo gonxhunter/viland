@@ -876,6 +876,404 @@ ol {
 
 /* Footer styles */
 
+/* line 4, scss/global/_footer.scss */
+
+#footer .footer-container {
+  background: #0e6a68;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+/* line 9, scss/global/_footer.scss */
+
+#footer .newsletter-block {
+  background: #13887d;
+}
+
+/* line 11, scss/global/_footer.scss */
+
+#footer .newsletter-block span {
+  float: left;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "AvenirNextBold";
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 30px;
+  padding: 30px 0;
+}
+
+/* line 21, scss/global/_footer.scss */
+
+#footer .newsletter-block .frm_forms .frm_form_fields {
+  text-align: center;
+}
+
+/* line 23, scss/global/_footer.scss */
+
+#footer .newsletter-block .frm_forms .frm_form_fields fieldset {
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* line 27, scss/global/_footer.scss */
+
+#footer .newsletter-block .frm_forms .frm_form_fields .form-field {
+  margin-bottom: 0 !important;
+}
+
+/* line 30, scss/global/_footer.scss */
+
+#footer .newsletter-block .frm_forms .frm_form_fields .frm_primary_label {
+  display: none;
+}
+
+/* line 33, scss/global/_footer.scss */
+
+#footer .newsletter-block .frm_forms .frm_form_fields .frm_form_field {
+  clear: none;
+  display: inline-block;
+  vertical-align: top;
+  padding: 27px 0;
+}
+
+/* line 39, scss/global/_footer.scss */
+
+#footer .newsletter-block .frm_forms .frm_form_fields input {
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  background: none !important;
+  border: none !important;
+  border-bottom: 4px solid #0f666b !important;
+  color: #0f666b !important;
+  font-size: 24px !important;
+  font-family: "AvenirNextBold" !important;
+  font-style: normal;
+  font-weight: normal;
+  width: 325px !important;
+  text-transform: uppercase;
+  padding: 0 !important;
+}
+
+/* line 52, scss/global/_footer.scss */
+
+#footer .newsletter-block .frm_forms .frm_form_fields .frm_submit {
+  clear: none;
+  float: right;
+}
+
+/* line 55, scss/global/_footer.scss */
+
+#footer .newsletter-block .frm_forms .frm_form_fields .frm_submit button {
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  background: #12746f !important;
+  border: none !important;
+  color: #13887d !important;
+  font-size: 24px !important;
+  font-family: "AvenirNextBold" !important;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 30px !important;
+  text-transform: uppercase;
+  padding: 30px 80px !important;
+  outline: none;
+}
+
+/* line 73, scss/global/_footer.scss */
+
+#footer .footer-content {
+  font-size: 0;
+  padding: 25px 0 15px;
+}
+
+/* line 76, scss/global/_footer.scss */
+
+#footer .footer-content li {
+  list-style: none;
+}
+
+/* line 79, scss/global/_footer.scss */
+
+#footer .footer-content .footer-title {
+  color: #0c4d4c;
+  font-size: 16px;
+  font-family: "AvenirNextBold";
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0 0 5px;
+}
+
+/* line 86, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 89, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block p,
+#footer .footer-content .footer-block span,
+#footer .footer-content .footer-block ul li {
+  color: #0c4d4c;
+  font-family: "AvenirNextDemiBold";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 93, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* line 98, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block span,
+#footer .footer-content .footer-block ul li {
+  font-size: 12px;
+}
+
+/* line 101, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block a {
+  color: #0c4d4c;
+}
+
+/* line 105, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 111, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-1 {
+  width: 35%;
+}
+
+/* line 113, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-1 ul {
+  max-width: 80%;
+  margin-top: 15px;
+}
+
+/* line 116, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-1 ul li {
+  line-height: 1.6;
+  padding-right: 60px;
+}
+
+/* line 119, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-1 ul li:nth-child(3) {
+  padding-right: 15px;
+}
+
+/* line 125, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-2 {
+  width: 40%;
+  padding-left: 60px;
+  position: relative;
+}
+
+/* line 129, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-2 .vi-icon-phone {
+  color: #08575b;
+  font-size: 26px;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
+
+/* line 136, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-2 p {
+  line-height: 1.6;
+}
+
+/* line 139, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-2 span {
+  display: block;
+  line-height: 1.6;
+}
+
+/* line 142, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-2 span:first-of-type {
+  margin-top: 10px;
+}
+
+/* line 147, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-3 {
+  width: 25%;
+  padding-left: 10px;
+}
+
+/* line 150, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-3 .footer-title {
+  margin: 0 0 10px;
+}
+
+/* line 155, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-3 ul li a {
+  font-size: 0;
+}
+
+/* line 157, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-3 ul li a:before {
+  content: '';
+  display: block;
+  color: #08575b;
+  font-size: 23px;
+  font-family: 'Viland-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+/* line 167, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-3 ul li.facebook a:before {
+  content: '\e90c';
+}
+
+/* line 174, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-3 ul li.twitter a:before {
+  content: '\e939';
+}
+
+/* line 181, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-3 ul li.google-plus a:before {
+  content: '\e90e';
+}
+
+/* line 188, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-3 ul li.linkedin a:before {
+  content: '\e90f';
+}
+
+/* line 195, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-3 ul li.pinterest a:before {
+  content: '\e923';
+}
+
+/* line 202, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-3 ul li.skype a:before {
+  content: '\e925';
+}
+
+/* line 209, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-3 ul li.youtube a:before {
+  content: '\e93b';
+  font-size: 27px;
+}
+
+/* line 216, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-3 ul li + li {
+  margin-left: 18px;
+}
+
+/* line 220, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-3 .widget_text {
+  margin-top: 25px;
+  padding-left: 40px;
+  position: relative;
+}
+
+/* line 224, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-3 .widget_text .footer-title {
+  margin: 0;
+}
+
+/* line 228, scss/global/_footer.scss */
+
+#footer .footer-content .footer-block-3 .vi-icon-plane {
+  color: #08575b;
+  font-size: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 239, scss/global/_footer.scss */
+
+#ub_global_footer_content {
+  background: #0d6361;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 14px 0;
+}
+
+/* line 244, scss/global/_footer.scss */
+
+#ub_global_footer_content p {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #0c4d4c;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left !important;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* line 253, scss/global/_footer.scss */
+
+#ub_global_footer_content a {
+  color: #0c4d4c !important;
+  text-decoration: none !important;
+}
+
+/* line 256, scss/global/_footer.scss */
+
+#ub_global_footer_content a img {
+  display: none;
+}
+
+/* line 260, scss/global/_footer.scss */
+
+#ub_global_footer_content span {
+  color: #0c4d4c !important;
+  text-decoration: none !important;
+}
+
 /* Component */
 
 /* Pages */

@@ -41,6 +41,8 @@ $jk_options = get_option('redux_demo');
           type="image/x-icon"/>
     <?php wp_head(); ?>
 
+	<!-- Import google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=vietnamese" rel="stylesheet">
 </head>
 <body <?php body_class('no-sidebar'); ?> <?php language_attributes(); ?>>
 <div id="wrapper">

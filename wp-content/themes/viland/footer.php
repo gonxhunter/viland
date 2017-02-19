@@ -10,17 +10,25 @@
 </div> <!-- end #container -->
 </div> <!-- end #wrapper -->
 <footer id="footer">
-	<div class="newsletter-block">
-		<div class="container">
-			<span>Join our newsletter</span>
-			<?php echo do_shortcode('[formidable id=16]');?>
+	<div class="footer-container">
+		<div class="newsletter-block">
+			<div class="container">
+				<span>Join our newsletter</span>
+				<?php echo do_shortcode('[formidable id=16]');?>
+			</div>
 		</div>
-	</div>
-	<div class="footer-content">
-		<div class="container">
-			<?php dynamic_sidebar( 'footer-block-1' ); ?>
-			<?php dynamic_sidebar( 'footer-block-2' ); ?>
-			<?php dynamic_sidebar( 'footer-block-3' ); ?>
+		<div class="footer-content">
+			<div class="container">
+				<div class="footer-block footer-block-1">
+					<?php dynamic_sidebar( 'footer-block-1' ); ?>
+				</div>
+				<div class="footer-block footer-block-2">
+					<?php dynamic_sidebar( 'footer-block-2' ); ?>
+				</div>
+				<div class="footer-block footer-block-3">
+					<?php dynamic_sidebar( 'footer-block-3' ); ?>
+				</div>
+			</div>
 		</div>
 	</div>
 </footer>

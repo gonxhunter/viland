@@ -1,6 +1,10 @@
 /* Background */
 $bg-green: #10726e;
+$bg-light-green: #13887d;
+$bg-grey-green: #0e6a68;
 $bg-dark-green: #07575b;
+$bg-blur-green: #12746f;
+$bg-copy-green: #0d6361;
 
 /* Border */
 
@@ -13,14 +17,19 @@ $mobile: 480px;
 
 /* Color */
 $c-white: #ffffff;
+$c-grey-green: #0f666b;
 $c-dark-green: #06373a;
+$c-copy-green: #0c4d4c;
+$c-foot-green: #08575b;
 
 /* Font */
 $f-avenir-next-medium: 'AvenirNextMedium';
 $f-avenir-next-demibold: 'AvenirNextDemiBold';
 $f-avenir-next-demibold-italic: 'AvenirNextDemiBoldItalic';
 $f-avenir-next-bold: 'AvenirNextBold';
+$f-open-sans: 'Open Sans', sans-serif;
 
 /* Layout */
-
+$wrapper-width: 1366px;
+$container-width: 1140px;
 
