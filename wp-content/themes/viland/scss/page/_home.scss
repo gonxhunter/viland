@@ -10,4 +10,48 @@
         position: absolute;
         z-index: 1;
     }
+    .home-slider {
+        .tp-resizeme {
+            @include font-style($f-avenir-next-bold);
+        }
+        .rev-btn {
+            @include font-style($f-avenir-next-bold !important);
+        }
+        .tp-parallax-wrap {
+            font-size: 0;
+            &:nth-of-type(4) {
+                .tp-resizeme {
+                    @include font-style($f-avenir-next-demibold);
+                }
+            }
+        }
+        .hesperiden {
+            &.tparrows {
+                width: 24px;
+                height: 63px;
+                &:before {
+                    display: none;
+                }
+                &.tp-leftarrow {
+                    background: url("../images/arr-prev-slide.png") no-repeat center transparent;
+                }
+                &.tp-rightarrow {
+                    background: url("../images/arr-next-slide.png") no-repeat center transparent;
+                }
+            }
+        }
+        .tp-bullets {
+            .tp-bullet {
+                @include border-radius(50%);
+                border: 3px solid $c-white;
+                background: $c-white;
+                width: 13px;
+                height: 13px;
+                &.selected {
+                    background: none;
+                    border-color: $bd-green;
+                }
+            }
+        }
+    }
 }

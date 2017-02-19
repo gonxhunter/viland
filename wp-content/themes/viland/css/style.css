@@ -1294,3 +1294,77 @@ ol {
   position: absolute;
   z-index: 1;
 }
+
+/* line 14, scss/page/_home.scss */
+
+.home .home-slider .tp-resizeme {
+  font-family: "AvenirNextBold";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 17, scss/page/_home.scss */
+
+.home .home-slider .rev-btn {
+  font-family: "AvenirNextBold" !important;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 20, scss/page/_home.scss */
+
+.home .home-slider .tp-parallax-wrap {
+  font-size: 0;
+}
+
+/* line 23, scss/page/_home.scss */
+
+.home .home-slider .tp-parallax-wrap:nth-of-type(4) .tp-resizeme {
+  font-family: "AvenirNextDemiBold";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 29, scss/page/_home.scss */
+
+.home .home-slider .hesperiden.tparrows {
+  width: 24px;
+  height: 63px;
+}
+
+/* line 32, scss/page/_home.scss */
+
+.home .home-slider .hesperiden.tparrows:before {
+  display: none;
+}
+
+/* line 35, scss/page/_home.scss */
+
+.home .home-slider .hesperiden.tparrows.tp-leftarrow {
+  background: url("../images/arr-prev-slide.png") no-repeat center transparent;
+}
+
+/* line 38, scss/page/_home.scss */
+
+.home .home-slider .hesperiden.tparrows.tp-rightarrow {
+  background: url("../images/arr-next-slide.png") no-repeat center transparent;
+}
+
+/* line 44, scss/page/_home.scss */
+
+.home .home-slider .tp-bullets .tp-bullet {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  background: #ffffff;
+  width: 13px;
+  height: 13px;
+}
+
+/* line 50, scss/page/_home.scss */
+
+.home .home-slider .tp-bullets .tp-bullet.selected {
+  background: none;
+  border-color: #1c857d;
+}
