@@ -1,0 +1,13 @@
+/* Home page styles */
+
+.home {
+    #wrapper {
+        position: relative;
+    }
+    #header {
+        background: none;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+}

@@ -7,8 +7,10 @@
  * Template Name: Homepage
  */
 get_header(); ?>
-<div class="wrapper-content">
-    <?php echo do_shortcode('[rev_slider alias="homepage-slider"]');?>
+<div class="home-content">
+	<div class="home-slider">
+		<?php echo do_shortcode('[rev_slider alias="homepage-slider"]');?>
+	</div>
 
     <div class="search-homepage">
         <h3>Find a tour</h3>

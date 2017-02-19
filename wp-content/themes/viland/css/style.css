@@ -1277,3 +1277,20 @@ ol {
 /* Component */
 
 /* Pages */
+
+/* Home page styles */
+
+/* line 4, scss/page/_home.scss */
+
+.home #wrapper {
+  position: relative;
+}
+
+/* line 7, scss/page/_home.scss */
+
+.home #header {
+  background: none;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
