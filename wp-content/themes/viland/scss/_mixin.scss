@@ -37,10 +37,17 @@
 }
 
 /* calculate */
-@mixin calc($property, $expression) {
-    #{$property}: -moz-calc(#{$expression});
-    #{$property}: -webkit-calc(#{$expression});
-    #{$property}: calc(#{$expression});
+@mixin calc($property, $expression, $important: 0) {
+    @if $important == 1 {
+        #{$property}: -moz-calc(#{$expression}) !important;
+        #{$property}: -webkit-calc(#{$expression}) !important;
+        #{$property}: calc(#{$expression}) !important;
+    }
+    @else {
+        #{$property}: -moz-calc(#{$expression});
+        #{$property}: -webkit-calc(#{$expression});
+        #{$property}: calc(#{$expression});
+    }
 }
 
 /* clear fix */

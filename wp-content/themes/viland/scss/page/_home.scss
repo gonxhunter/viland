@@ -4,12 +4,14 @@
     #wrapper {
         position: relative;
     }
+
     #header {
         background: none;
         width: 100%;
         position: absolute;
         z-index: 1;
     }
+
     .home-slider {
         position: relative;
         .tp-resizeme {
@@ -94,6 +96,133 @@
             li + li {
                 padding-left: 20px;
             }
+        }
+    }
+
+    .find-tour {
+        background: $bg-tour-green;
+        @include clear-fix();
+        h3 {
+            color: $c-white;
+            font-size: 20px;
+            @include font-style($f-avenir-next-bold);
+            margin: 0;
+            padding: 20px 0;
+        }
+        .selection-box {
+            select, input {
+                float: left;
+                @include calc(width, '(100% - 30px)/4');
+            }
+            select {
+                background: $bg-select-green;
+                border: none;
+                cursor: pointer;
+                color: $c-white;
+                font-size: 18px;
+                @include font-style($f-avenir-next-demibold);
+                text-transform: uppercase;
+                margin-right: 10px;
+                padding: 14px 15px;
+                outline: none;
+            }
+            input {
+                background: $bg-search-green;
+                border: none;
+                cursor: pointer;
+                color: $bd-green;
+                font-size: 18px;
+                @include font-style($f-avenir-next-demibold);
+                text-align: center;
+                text-transform: uppercase;
+                @include calc(width, '(100% - 30px)/4', 1);
+                padding: 15px;
+                outline: none;
+            }
+        }
+    }
+
+    .popular-tour {
+        h3 {
+            color: $bg-light-green;
+            font-size: 22px;
+            @include font-style($f-avenir-next-bold);
+            text-align: center;
+            margin: 30px 0 20px;
+        }
+        .popular-products {
+            @include clear-fix();
+            margin-bottom: 30px;
+            li {
+                float: left;
+                list-style: none;
+                @include calc(width, '(100% - 30px)/4');
+                a {
+                    color: $c-white;
+                    display: block;
+                    text-align: center;
+                    padding-bottom: 98px;
+                    position: relative;
+                    overflow: hidden;
+                    &:hover {
+                        .info {
+                            bottom: 0;
+                        }
+                    }
+                }
+                p {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    margin: 0 0 10px;
+                }
+                h4 {
+                    font-size: 16px;
+                    @include font-style($f-avenir-next-demibold);
+                    max-height: 59px;
+                    margin: 0;
+                    padding: 0 45px 15px;
+                    overflow: hidden;
+                }
+                button {
+                    background: $c-grey-green;
+                    border: none;
+                    cursor: pointer;
+                    color: $c-white;
+                    font-size: 14px;
+                    @include font-style($f-avenir-next-demibold);
+                    text-transform: uppercase;
+                    display: block;
+                    width: 100%;
+                    margin-top: 35px;
+                    padding: 15px;
+                    outline: none;
+                }
+                .info {
+                    background: $bg-green;
+                    display: block;
+                    margin: 0;
+                    padding: 10px 0 0;
+                    position: absolute;
+                    bottom: -84px;
+                    @include transition();
+                }
+            }
+            li + li {
+                margin-left: 10px;
+            }
+        }
+        .view-all-tours {
+            background: $c-grey-green;
+            color: $c-white;
+            font-size: 18px;
+            @include font-style($f-avenir-next-bold);
+            text-align: center;
+            text-transform: uppercase;
+            width: 185px;
+            clear: both;
+            display: block;
+            margin: 0 auto 35px;
+            padding: 12px;
         }
     }
 }
