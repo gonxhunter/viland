@@ -10,7 +10,7 @@ get_header(); ?>
 <div class="home-content">
 	<div class="home-slider">
 		<?php echo do_shortcode('[rev_slider alias="homepage-slider"]');?>
-		<a class="scroll-down" href="#">SCROLL&nbsp;&nbsp;<i class="vi-icon-mouse-down"></i>&nbsp;&nbsp;DOWN</a>
+		<a class="scroll-down" href="#">SCROLL<i class="vi-icon-mouse-down"></i>DOWN</a>
 		<ul class="social-share">
 			<li><a href="#"><i class="vi-icon-fb"></i></a></li>
 			<li><a href="#"><i class="vi-icon-tt"></i></a></li>

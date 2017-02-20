@@ -11,6 +11,7 @@
         z-index: 1;
     }
     .home-slider {
+        position: relative;
         .tp-resizeme {
             @include font-style($f-avenir-next-bold);
         }
@@ -51,6 +52,47 @@
                     background: none;
                     border-color: $bd-green;
                 }
+            }
+        }
+        .scroll-down {
+            color: $c-white;
+            font-size: 24px;
+            @include font-style($f-avenir-next-bold);
+            text-transform: uppercase;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            @include transform(translateX(-50%));
+            .vi-icon-mouse-down {
+                display: inline-block;
+                vertical-align: top;
+                font-size: 48px;
+            }
+        }
+        .social-share {
+            font-size: 0;
+            position: absolute;
+            bottom: 40px;
+            right: 80px;
+            li {
+                display: inline-block;
+                vertical-align: top;
+                a {
+                    color: $c-white;
+                }
+                i {
+                    display: block;
+                    font-size: 21px;
+                }
+                &:last-child {
+                    i {
+                        font-size: 31px;
+                        margin-top: -5px;
+                    }
+                }
+            }
+            li + li {
+                padding-left: 20px;
             }
         }
     }
