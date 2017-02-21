@@ -4,27 +4,19 @@
  * User: chutienphuc
  * Date: 15/02/2017
  * Time: 10:47
- * Template Name: About us
+ * Template Name: Contact us
  */
 get_header(); ?>
 <div class="wrapper-content">
-    <div class="about-content">
-        <div class="right-about-us">
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <?php the_content(); ?>
-            <?php endwhile; else: ?>
-            <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-            <?php endif; ?>
+    <div class="contact-content">
+        <h1>Contact us</h1>
+        <div class="contact-form">
+            <?php echo do_shortcode('[formidable id=6]');?>
         </div>
-        <div class="left-about-us">
-            <div id="TA_selfserveprop37" class="TA_selfserveprop">
-                <ul id="fGcCYx7Gm" class="TA_links S2lrJkGlltQm">
-                    <li id="RL1Hypa" class="GYYemwO">
-                        <a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
-                    </li>
-                </ul>
-            </div>
-            <script src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=37&amp;locationId=10514184&amp;lang=en_US&amp;rating=true&amp;nreviews=4&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=true&amp;border=true&amp;display_version=2"></script>
+        <div class="contact-info">
+            <a href="/faqs"><img src="faqs"></a>
+            <a href="/custom-tour"><img src="custom-tour"></a>
+            <a href="/call"><img src="call"></a>
         </div>
     </div>
     
