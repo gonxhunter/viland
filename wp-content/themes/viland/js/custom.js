@@ -20,6 +20,13 @@
                     });
                 }
             }
+        },
+
+        customSelect: function() {
+            var select = $('select');
+            if(select.length) {
+                select.selectpicker();
+            }
         }
     };
 
@@ -27,6 +34,8 @@
     $(window).ready(function() {
         // Nav menu
         customJS.navMenu();
+        // Custom select
+        customJS.customSelect();
     });
 
     // Window load function //

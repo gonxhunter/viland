@@ -87,35 +87,38 @@ get_header(); ?>
 			    <?php endwhile; ?>
 		    </ul>
 		    <?php wp_reset_query(); ?>
-		    <a class="view-all-tours" href="#">View All</a>
+		    <a class="button view-all-tours" href="#">View All</a>
 	    </div>
     </div>
 
     <div class="categories-tour">
-        <?php
-        $args = array(
-            'number'     => 6,
-            'orderby'    => 'date',
-            'order'      => 'DESC',
-            'hide_empty' => 1
-        );
-        $product_categories = get_terms( 'product_cat', $args );
-        echo '<ul class=categories-pagkage>';
-        foreach ($product_categories as $cat){
-            echo '<li class="item cat-item">';
-            echo '<a href="'.$cat->slug.'">';
-            echo $cat->name;
-            $thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );
-            $image = wp_get_attachment_url( $thumbnail_id );
-            if ( $image ) {
-                echo '<img src="' . $image . '" alt="" />';
+        <div class="container">
+            <h3>Popular tour</h3>
+            <?php
+            $args = array(
+                'number'     => 6,
+                'orderby'    => 'date',
+                'order'      => 'DESC',
+                'hide_empty' => 1
+            );
+            $product_categories = get_terms( 'product_cat', $args );
+            echo '<ul class=categories-package>';
+            foreach ($product_categories as $cat){
+                echo '<li class="item cat-item">';
+                echo '<a href="'.$cat->slug.'">';
+                echo '<strong>' . $cat->name . '</strong>';
+                $thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );
+                $image = wp_get_attachment_url( $thumbnail_id );
+                if ( $image ) {
+                    echo '<img src="' . $image . '" alt="" />';
+                }
+                echo '<span class="link-category">View tours</span>';
+                echo '</a></li>';
             }
-            echo '<span class="link-category">View tours</span>';
-            echo '</a></li>';
-        }
-        echo '<a class="view-all-tours" href="#"> View All</a>';
-        echo '</ul>';
-        ?>
+            echo '</ul>';
+            ?>
+            <a class="button view-all-types" href="#">View All</a>
+        </div>
     </div>
 
     <div class="testimonial-homepage">

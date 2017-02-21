@@ -212,17 +212,60 @@
             }
         }
         .view-all-tours {
-            background: $c-grey-green;
+            clear: both;
+            margin-bottom: 35px;
+        }
+    }
+
+    .categories-tour {
+        background: $bg-grey;
+        padding: 25px 0 35px;
+        position: relative;
+        z-index: 1;
+        &:before {
+            content: '';
+            display: block;
+            background: $bg-tour-green;
+            width: 100%;
+            height: 247px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        h3 {
             color: $c-white;
-            font-size: 18px;
+            font-size: 22px;
             @include font-style($f-avenir-next-bold);
             text-align: center;
-            text-transform: uppercase;
-            width: 185px;
+            margin: 0;
+        }
+        .categories-package {
+            margin-top: 20px;
+            li {
+                list-style: none;
+                a {
+                    color: $c-white;
+                    display: block;
+                    text-align: center;
+                }
+                strong {
+                    font-size: 22px;
+                    @include font-style($f-avenir-next-demibold);
+                    line-height: 1;
+                    text-transform: uppercase;
+                }
+                span {
+                    background: $c-grey-green;
+                    font-size: 18px;
+                    @include font-style($f-avenir-next-demibold);
+                    text-transform: uppercase;
+                    padding: 12px 15px;
+                }
+            }
+        }
+        .view-all-types {
             clear: both;
-            display: block;
-            margin: 0 auto 35px;
-            padding: 12px;
         }
     }
 }

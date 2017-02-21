@@ -36,6 +36,9 @@
                     vertical-align: top;
                     padding: 27px 0;
                 }
+                .frm_hidden {
+                    display: none;
+                }
                 input {
                     @include border-radius(0 !important);
                     @include box-shadow(none !important);

@@ -1,0 +1,14 @@
+/* Button styles */
+
+.button {
+    background: $c-grey-green;
+    color: $c-white;
+    font-size: 18px;
+    @include font-style($f-avenir-next-bold);
+    text-align: center;
+    text-transform: uppercase;
+    width: 185px;
+    display: block;
+    margin: 0 auto;
+    padding: 12px;
+}
