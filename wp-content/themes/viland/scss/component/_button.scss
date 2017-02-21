@@ -1,6 +1,7 @@
 /* Button styles */
 
 .button {
+    @include border-radius(0);
     background: $c-grey-green;
     color: $c-white;
     font-size: 18px;

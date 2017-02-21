@@ -35,7 +35,7 @@
         // Nav menu
         customJS.navMenu();
         // Custom select
-        customJS.customSelect();
+        //customJS.customSelect();
     });
 
     // Window load function //
