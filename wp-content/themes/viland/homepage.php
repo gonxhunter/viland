@@ -121,8 +121,8 @@ get_header(); ?>
         </div>
     </div>
 
-    <div class="testimonial-homepage">
-        <h2>Testimonials</h2>
+    <div class="testimonials">
+        <h3>Testimonials</h3>
         <?php
         $args = array(
             'post_type' => 'testimonials',
@@ -132,28 +132,30 @@ get_header(); ?>
             'order' => 'DESC' );
         $loop = new WP_Query( $args );
         ?>
-        <ul class="popular-products">
+        <ul class="test-list">
             <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-                <li class="item product">
+                <li class="item test">
                     <a id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                        <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; ?>
                         <div class="post-excerpt">
                             <?php echo the_content(); ?>
                         </div>
-                        <?php $client_name = get_post_meta(get_the_ID(), 'client_name', true);
-                        if (!empty($client_name)):
-                            ?>
-                            <div class="client_name">
-                                <?php echo $client_name; ?>
-                            </div>
-                        <?php endif; ?>
-                        <?php $company = get_post_meta(get_the_ID(), 'location', true);
-                        if (!empty($company)):
-                            ?>
-                            <div class="company">
-                                <?php echo $company; ?>
-                            </div>
-                        <?php endif; ?>
+	                    <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; ?>
+	                    <div class="detail">
+		                    <?php $client_name = get_post_meta(get_the_ID(), 'client_name', true);
+		                    if (!empty($client_name)):
+			                    ?>
+			                    <span class="client-name">
+				                    <?php echo $client_name; ?>&#44;
+			                    </span>
+		                    <?php endif; ?>
+		                    <?php $company = get_post_meta(get_the_ID(), 'location', true);
+		                    if (!empty($company)):
+			                    ?>
+			                    <span class="country">
+				                    <?php echo $company; ?>
+			                    </span>
+		                    <?php endif; ?>
+	                    </div>
                     </a>
                 </li>
             <?php endwhile; ?>
@@ -162,7 +164,7 @@ get_header(); ?>
     </div>
 
     <div class="why-travel">
-        <h2>Why travel with us?</h2>
+        <h3>Why travel with us?</h3>
     </div>
 
     <div class="travel-info">
