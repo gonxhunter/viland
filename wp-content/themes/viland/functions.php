@@ -152,11 +152,12 @@ add_filter( 'wp_default_editor', create_function('', 'return "tinymce";') );
  */
 function stn_frontend_scripts() {
     /*============ Styles ============ */
-    wp_enqueue_style( 'bootstrap-select',   get_template_directory_uri() . '/js/bootstrap-select/bootstrap-select.css');
+    wp_enqueue_style( 'bootstrap-select',   get_template_directory_uri() . '/js/select-box/jquery.selectBox.css');
 	wp_enqueue_style( 'styles',   get_template_directory_uri() . '/css/style.css');
 	wp_enqueue_style( 'styles-editor',   get_template_directory_uri() . '/style.css');
     /*============ Javascripts ============ */
     wp_enqueue_script( 'jquery',   get_template_directory_uri() . '/js/jquery.js');
-    wp_enqueue_script( 'bootstrap-select-js',   get_template_directory_uri() . '/js/bootstrap-select/bootstrap-select.min.js');
+    wp_enqueue_script( 'bootstrap-select-js',   get_template_directory_uri() . '/js/select-box/jquery.selectBox.js');
+    wp_enqueue_script( 'masonry',   get_template_directory_uri() . '/js/masonry.pkgd.min.js');
     wp_enqueue_script( 'custom',   get_template_directory_uri() . '/js/custom.js',array('jquery'), '3.1.1', true);
 }

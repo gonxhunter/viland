@@ -25,7 +25,9 @@
         customSelect: function() {
             var select = $('select');
             if(select.length) {
-                select.selectpicker();
+                select.selectBox({
+                    mobile: true
+                });
             }
         }
     };
@@ -34,8 +36,9 @@
     $(window).ready(function() {
         // Nav menu
         customJS.navMenu();
+
         // Custom select
-        //customJS.customSelect();
+        customJS.customSelect();
     });
 
     // Window load function //

@@ -139,6 +139,35 @@
                 padding: 15px;
                 outline: none;
             }
+            .selectBox-dropdown {
+                @include border-radius(0);
+                @include box-shadow(none);
+                @include calc(width, '(100% - 30px)/4', 1);
+                background: $bg-select-green;
+                border: none;
+                float: left;
+                cursor: pointer;
+                color: $c-white;
+                font-size: 18px;
+                @include font-style($f-avenir-next-demibold);
+                line-height: 1;
+                text-transform: uppercase;
+                margin-right: 10px;
+                padding: 20px 20px 13px;
+                outline: none;
+                .selectBox-label {
+                    padding: 0;
+                }
+                .selectBox-arrow {
+                    border: none;
+                    width: 16px;
+                    height: 11px;
+                    background: url("../images/arr-down.png") no-repeat center transparent;
+                    right: 20px;
+                    top: 50%;
+                    margin-top: -5px;
+                }
+            }
         }
     }
 
@@ -266,6 +295,26 @@
         }
         .view-all-types {
             clear: both;
+        }
+    }
+
+    .selectBox-dropdown-menu {
+        @include border-radius(0);
+        @include box-shadow(none);
+        background: $bg-select-green;
+        li {
+            a {
+                color: $c-white;
+                @include font-style($f-avenir-next-demibold);
+                text-transform: uppercase;
+                padding: 10px 20px;
+            }
+            &.selectBox-hover,
+            &.selectBox-selected {
+                a {
+                    background: $bg-light-green;
+                }
+            }
         }
     }
 }
