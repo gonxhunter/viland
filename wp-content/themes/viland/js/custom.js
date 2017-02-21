@@ -29,6 +29,17 @@
                     mobile: true
                 });
             }
+        },
+
+        gridTourType: function() {
+            var typeList = $('.categories-tour .categories-package'),
+                typeItem = $('.item', typeList);
+            if(typeItem.length) {
+                typeList.masonry({
+                    itemSelector: '.item',
+                    gutter: 10
+                });
+            }
         }
     };
 
@@ -43,7 +54,8 @@
 
     // Window load function //
     $(window).load(function() {
-
+        // Grid tour type
+        //customJS.gridTourType();
     });
 
     // Window resize function //

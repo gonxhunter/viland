@@ -1756,24 +1756,64 @@ ol {
 /* line 272, scss/page/_home.scss */
 
 .home .categories-tour .categories-package {
-  margin-top: 20px;
+  margin: 20px 0 15px;
 }
 
-/* line 274, scss/page/_home.scss */
+/* line 55, scss/_mixin.scss */
+
+.home .categories-tour .categories-package:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+/* line 275, scss/page/_home.scss */
 
 .home .categories-tour .categories-package li {
+  float: left;
   list-style: none;
+  max-width: -moz-calc(50% - 10px);
+  max-width: -webkit-calc(50% - 10px);
+  max-width: calc(50% - 10px);
+  margin: 0 10px 10px 0;
+  position: relative;
 }
 
-/* line 276, scss/page/_home.scss */
+/* line 281, scss/page/_home.scss */
+
+.home .categories-tour .categories-package li:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* line 284, scss/page/_home.scss */
 
 .home .categories-tour .categories-package li a {
   color: #ffffff;
   display: block;
   text-align: center;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
-/* line 281, scss/page/_home.scss */
+/* line 290, scss/page/_home.scss */
+
+.home .categories-tour .categories-package li a:hover strong {
+  font-size: 26px;
+  top: 45%;
+}
+
+/* line 294, scss/page/_home.scss */
+
+.home .categories-tour .categories-package li a:hover span {
+  top: 60%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* line 300, scss/page/_home.scss */
 
 .home .categories-tour .categories-package li strong {
   font-size: 22px;
@@ -1782,9 +1822,22 @@ ol {
   font-weight: normal;
   line-height: 1;
   text-transform: uppercase;
+  width: 74%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-/* line 287, scss/page/_home.scss */
+/* line 312, scss/page/_home.scss */
 
 .home .categories-tour .categories-package li span {
   background: #0f666b;
@@ -1794,15 +1847,30 @@ ol {
   font-weight: normal;
   text-transform: uppercase;
   padding: 12px 15px;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  white-space: nowrap;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-/* line 296, scss/page/_home.scss */
+/* line 328, scss/page/_home.scss */
 
 .home .categories-tour .view-all-types {
   clear: both;
 }
 
-/* line 301, scss/page/_home.scss */
+/* line 333, scss/page/_home.scss */
 
 .home .selectBox-dropdown-menu {
   -moz-border-radius: 0;
@@ -1814,7 +1882,7 @@ ol {
   background: #106f6c;
 }
 
-/* line 306, scss/page/_home.scss */
+/* line 338, scss/page/_home.scss */
 
 .home .selectBox-dropdown-menu li a {
   color: #ffffff;
@@ -1825,7 +1893,7 @@ ol {
   padding: 10px 20px;
 }
 
-/* line 314, scss/page/_home.scss */
+/* line 346, scss/page/_home.scss */
 
 .home .selectBox-dropdown-menu li.selectBox-hover a,
 .home .selectBox-dropdown-menu li.selectBox-selected a {

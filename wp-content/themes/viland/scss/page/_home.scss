@@ -270,19 +270,44 @@
             margin: 0;
         }
         .categories-package {
-            margin-top: 20px;
+            margin: 20px 0 15px;
+            @include clear-fix();
             li {
+                float: left;
                 list-style: none;
+                @include calc(max-width, '50% - 10px');
+                margin: 0 10px 10px 0;
+                position: relative;
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
                 a {
                     color: $c-white;
                     display: block;
                     text-align: center;
+                    @include transform(translate3d(0,0,0));
+                    &:hover {
+                        strong {
+                            font-size: 26px;
+                            top: 45%;
+                        }
+                        span {
+                            top: 60%;
+                            @include opacity(1);
+                        }
+                    }
                 }
                 strong {
                     font-size: 22px;
                     @include font-style($f-avenir-next-demibold);
                     line-height: 1;
                     text-transform: uppercase;
+                    width: 74%;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    @include transform(translate(-50%,-50%));
+                    @include transition();
                 }
                 span {
                     background: $c-grey-green;
@@ -290,6 +315,13 @@
                     @include font-style($f-avenir-next-demibold);
                     text-transform: uppercase;
                     padding: 12px 15px;
+                    position: absolute;
+                    left: 50%;
+                    top: 65%;
+                    white-space: nowrap;
+                    @include opacity(0);
+                    @include transform(translateX(-50%));
+                    @include transition();
                 }
             }
         }
