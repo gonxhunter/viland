@@ -122,49 +122,71 @@ get_header(); ?>
     </div>
 
     <div class="testimonials">
-        <h3>Testimonials</h3>
-        <?php
-        $args = array(
-            'post_type' => 'testimonials',
-            'stock' => 1,
-            'posts_per_page' => 4,
-            'orderby' =>'date',
-            'order' => 'DESC' );
-        $loop = new WP_Query( $args );
-        ?>
-        <ul class="test-list">
-            <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-                <li class="item test">
-                    <a id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                        <div class="post-excerpt">
-                            <?php echo the_content(); ?>
-                        </div>
-	                    <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; ?>
-	                    <div class="detail">
-		                    <?php $client_name = get_post_meta(get_the_ID(), 'client_name', true);
-		                    if (!empty($client_name)):
-			                    ?>
-			                    <span class="client-name">
+        <div class="container">
+            <h3>Testimonials</h3>
+            <?php
+            $args = array(
+                'post_type' => 'testimonials',
+                'stock' => 1,
+                'posts_per_page' => 4,
+                'orderby' =>'date',
+                'order' => 'DESC' );
+            $loop = new WP_Query( $args );
+            ?>
+            <ul class="test-list">
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+                    <li class="item test">
+                        <a id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                            <div class="post-excerpt">
+                                <?php echo the_content(); ?>
+                            </div>
+                            <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; ?>
+                            <div class="detail">
+                                <?php $client_name = get_post_meta(get_the_ID(), 'client_name', true);
+                                if (!empty($client_name)):
+                                    ?>
+                                    <span class="client-name">
 				                    <?php echo $client_name; ?>&#44;
 			                    </span>
-		                    <?php endif; ?>
-		                    <?php $company = get_post_meta(get_the_ID(), 'location', true);
-		                    if (!empty($company)):
-			                    ?>
-			                    <span class="country">
+                                <?php endif; ?>
+                                <?php $company = get_post_meta(get_the_ID(), 'location', true);
+                                if (!empty($company)):
+                                    ?>
+                                    <span class="country">
 				                    <?php echo $company; ?>
 			                    </span>
-		                    <?php endif; ?>
-	                    </div>
-                    </a>
-                </li>
-            <?php endwhile; ?>
-        </ul>
-        <?php wp_reset_query(); ?>
+                                <?php endif; ?>
+                            </div>
+                        </a>
+                    </li>
+                <?php endwhile; ?>
+            </ul>
+            <?php wp_reset_query(); ?>
+        </div>
     </div>
 
     <div class="why-travel">
-        <h3>Why travel with us?</h3>
+        <div class="container">
+            <h3>Why travel with us?</h3>
+            <ul class="reason-list">
+                <li>
+                    <i class="vi-icon-ex-local-guides"></i>
+                    <strong>WE HAVE EXPERIENCED LOCAL GUIDES WITH A PASSION FOR CULTURE</strong>
+                </li>
+                <li>
+                    <i class="vi-icon-des-experts"></i>
+                    <strong>DESTINATION EXPERTS BEHIND EVERY VILAND JOURNEY</strong>
+                </li>
+                <li>
+                    <i class="vi-icon-support"></i>
+                    <strong>TAILOR MADE ITINERARIES MADE JUST FOR YOU</strong>
+                </li>
+                <li>
+                    <i class="vi-icon-des-experts-2"></i>
+                    <strong>ON THE GROUND SUPPORT WHENEVER YOU NEED US</strong>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <div class="travel-info">

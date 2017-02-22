@@ -40,6 +40,15 @@
                     gutter: 10
                 });
             }
+        },
+
+        testimonialSlider: function() {
+            var testList = $('.testimonials .test-list');
+            if(testList.length) {
+                testList.slick({
+                    slide: 'li'
+                });
+            }
         }
     };
 
@@ -56,6 +65,9 @@
     $(window).load(function() {
         // Grid tour type
         //customJS.gridTourType();
+
+        // Testimonial slider
+        customJS.testimonialSlider();
     });
 
     // Window resize function //

@@ -105,7 +105,6 @@
         h3 {
             color: $c-white;
             font-size: 20px;
-            @include font-style($f-avenir-next-bold);
             margin: 0;
             padding: 20px 0;
         }
@@ -175,7 +174,6 @@
         h3 {
             color: $bg-light-green;
             font-size: 22px;
-            @include font-style($f-avenir-next-bold);
             text-align: center;
             margin: 30px 0 20px;
         }
@@ -265,7 +263,6 @@
         h3 {
             color: $c-white;
             font-size: 22px;
-            @include font-style($f-avenir-next-bold);
             text-align: center;
             margin: 0;
         }
@@ -327,6 +324,94 @@
         }
         .view-all-types {
             clear: both;
+        }
+    }
+
+    .testimonials {
+        h3 {
+            color: $bg-tour-green;
+            font-size: 22px;
+            text-align: center;
+            margin: 40px 0 0;
+        }
+        .test-list {
+            margin-top: 35px;
+            li {
+                list-style: none;
+                text-align: center;
+                padding: 0 100px;
+                a {
+                    color: $c-grey;
+                    display: block;
+                }
+            }
+            .post-excerpt {
+                p {
+                    color: $c-grey;
+                    font-size: 22px;
+                    @include font-style($f-avenir-next-demibold-italic);
+                    line-height: 1.3;
+                    margin: 0 0 15px;
+                }
+
+            }
+            img {
+                @include border-radius(50%);
+                display: block;
+                width: 78px;
+                height: 78px;
+                margin: 0 auto;
+            }
+            .detail {
+                color: $c-test-green;
+                font-size: 18px;
+                margin-top: 10px;
+            }
+            .slick-prev, .slick-next {
+                width: 13px;
+                height: 35px;
+                top: 10px;
+                @include transform(none);
+                &:before {
+                    display: none;
+                }
+            }
+            .slick-prev {
+                background: url("../images/arr-prev-testi.png") no-repeat center transparent;
+                left: -65px;
+            }
+            .slick-next {
+                background: url("../images/arr-next-testi.png") no-repeat center transparent;
+                right: -65px;
+            }
+        }
+    }
+
+    .why-travel {
+        background: $bg-green;
+        padding: 30px 0;
+        h3 {
+            color: $c-white;
+            font-size: 22px;
+            text-align: center;
+            margin: 0;
+        }
+        .reason-list {
+            font-size: 0;
+            li {
+                list-style: none;
+                text-align: center;
+                i {
+                    color: $c-white;
+                    font-size: 110px;
+                }
+                strong {
+                    color: $c-white;
+                    font-size: 14px;
+                    @include font-style($f-avenir-next-demibold);
+                    text-transform: uppercase;
+                }
+            }
         }
     }
 

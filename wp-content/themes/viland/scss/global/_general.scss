@@ -27,11 +27,12 @@ a {
     text-decoration: none;
     &:hover, &:focus {
         text-decoration: none;
+        outline: none;
     }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
+    @include font-style($f-avenir-next-bold);
     text-transform: uppercase;
 }
 
