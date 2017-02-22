@@ -8,7 +8,7 @@
  */
 get_header(); ?>
 <div class="wrapper-content">
-    <div class="contact-content">
+    <div class="contact-content container">
         <h3>Contact us</h3>
         <div class="contact-form">
             <p>Fill in the form below to let us know your enquiry. A consultant will contact you within 24 - 48 hours</p>
