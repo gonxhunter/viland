@@ -1882,7 +1882,7 @@ ol {
 /* line 337, scss/page/_home.scss */
 
 .home .testimonials .test-list {
-  margin-top: 35px;
+  margin: 35px 0;
 }
 
 /* line 339, scss/page/_home.scss */
@@ -1987,34 +1987,44 @@ ol {
 
 .home .why-travel .reason-list {
   font-size: 0;
+  margin-top: 40px;
 }
 
-/* line 401, scss/page/_home.scss */
+/* line 402, scss/page/_home.scss */
 
 .home .why-travel .reason-list li {
+  display: inline-block;
+  vertical-align: top;
   list-style: none;
   text-align: center;
+  width: 25%;
+  padding: 0 30px;
 }
 
-/* line 404, scss/page/_home.scss */
+/* line 409, scss/page/_home.scss */
 
-.home .why-travel .reason-list li i {
-  color: #ffffff;
-  font-size: 110px;
+.home .why-travel .reason-list li img {
+  display: block;
+  width: 110px;
+  height: auto;
+  margin: 0 auto;
 }
 
-/* line 408, scss/page/_home.scss */
+/* line 415, scss/page/_home.scss */
 
 .home .why-travel .reason-list li strong {
+  display: block;
   color: #ffffff;
   font-size: 14px;
   font-family: "AvenirNextDemiBold";
   font-style: normal;
   font-weight: normal;
+  line-height: 1.3;
   text-transform: uppercase;
+  margin-top: 20px;
 }
 
-/* line 418, scss/page/_home.scss */
+/* line 428, scss/page/_home.scss */
 
 .home .selectBox-dropdown-menu {
   -moz-border-radius: 0;
@@ -2026,7 +2036,7 @@ ol {
   background: #106f6c;
 }
 
-/* line 423, scss/page/_home.scss */
+/* line 433, scss/page/_home.scss */
 
 .home .selectBox-dropdown-menu li a {
   color: #ffffff;
@@ -2037,7 +2047,7 @@ ol {
   padding: 10px 20px;
 }
 
-/* line 431, scss/page/_home.scss */
+/* line 441, scss/page/_home.scss */
 
 .home .selectBox-dropdown-menu li.selectBox-hover a,
 .home .selectBox-dropdown-menu li.selectBox-selected a {

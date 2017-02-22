@@ -335,7 +335,7 @@
             margin: 40px 0 0;
         }
         .test-list {
-            margin-top: 35px;
+            margin: 35px 0;
             li {
                 list-style: none;
                 text-align: center;
@@ -398,18 +398,28 @@
         }
         .reason-list {
             font-size: 0;
+            margin-top: 40px;
             li {
+                display: inline-block;
+                vertical-align: top;
                 list-style: none;
                 text-align: center;
-                i {
-                    color: $c-white;
-                    font-size: 110px;
+                width: 25%;
+                padding: 0 30px;
+                img {
+                    display: block;
+                    width: 110px;
+                    height: auto;
+                    margin: 0 auto;
                 }
                 strong {
+                    display: block;
                     color: $c-white;
                     font-size: 14px;
                     @include font-style($f-avenir-next-demibold);
+                    line-height: 1.3;
                     text-transform: uppercase;
+                    margin-top: 20px;
                 }
             }
         }

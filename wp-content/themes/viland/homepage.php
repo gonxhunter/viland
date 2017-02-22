@@ -170,19 +170,19 @@ get_header(); ?>
             <h3>Why travel with us?</h3>
             <ul class="reason-list">
                 <li>
-                    <i class="vi-icon-ex-local-guides"></i>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/icon-ex-local-guides.svg" alt=""/>
                     <strong>WE HAVE EXPERIENCED LOCAL GUIDES WITH A PASSION FOR CULTURE</strong>
                 </li>
                 <li>
-                    <i class="vi-icon-des-experts"></i>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/icon-des-experts.svg" alt=""/>
                     <strong>DESTINATION EXPERTS BEHIND EVERY VILAND JOURNEY</strong>
                 </li>
                 <li>
-                    <i class="vi-icon-support"></i>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/icon-support.svg" alt=""/>
                     <strong>TAILOR MADE ITINERARIES MADE JUST FOR YOU</strong>
                 </li>
                 <li>
-                    <i class="vi-icon-des-experts-2"></i>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/icon-des-experts-2.svg" alt=""/>
                     <strong>ON THE GROUND SUPPORT WHENEVER YOU NEED US</strong>
                 </li>
             </ul>
