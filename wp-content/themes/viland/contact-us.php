@@ -19,14 +19,14 @@ get_header(); ?>
                 <li class="item item-contact">
                     <a href="/faqs">
                         <strong>FAQs</strong>
-                        <img src="http://viland.local/wp-content/uploads/2017/02/faq-img.jpg">
+                        <img src="/wp-content/uploads/2017/02/faq-img.jpg">
                         <p class="read-more">Read more</p>
                     </a>
                 </li>
                 <li class="item item-contact">
                     <a href="/custom-tour">
                         <strong>DESIGN YOUR OWN CUSTOM TOUR</strong>
-                        <img src="http://viland.local/wp-content/uploads/2017/02/custom-tour-img.jpg">
+                        <img src="/wp-content/uploads/2017/02/custom-tour-img.jpg">
                         <p class="read-more">Start now</p>
                     </a>
                 </li>
@@ -37,7 +37,7 @@ get_header(); ?>
                             <p>Steve</p>
                         </strong>
 
-                        <img src="http://viland.local/wp-content/uploads/2017/02/call-consierge-img.jpg">
+                        <img src="/wp-content/uploads/2017/02/call-consierge-img.jpg">
                         <p class="read-more"><i class="vi-icon-phone"></i>   Call now</p>
                     </a>
                 </li>
