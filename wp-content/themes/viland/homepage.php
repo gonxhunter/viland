@@ -204,6 +204,7 @@ get_header(); ?>
                     $args = array(
                         'post_type'=> 'post',
                         'orderby' => 'post_date',
+                        'posts_per_page' => 3,
                         'order'    => 'DESC'
                     );
 
@@ -221,13 +222,33 @@ get_header(); ?>
                     <?php endif; wp_reset_postdata(); ?>
                 </div>
                 <div class="tab-pane" id="videos">
-                    <h2>Content of videos</h2>
+                    <?php
+                    $args = array(
+                        'post_type'=> 'video',
+                        'orderby' => 'post_date',
+                        'posts_per_page' => 3,
+                        'order'    => 'DESC'
+                    );
+
+                    $the_query = new WP_Query( $args );
+                    echo '<ul class="recent-video">';
+                    if($the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();?>
+                        <li class="item-video">
+                            <a href="<?php echo get_permalink(get_the_ID())?>">
+                                <?php echo get_the_post_thumbnail(get_the_ID(), array(800,600));?>
+                                <p><?php the_title(); ?></p>
+                                <p class="read-more">Read more</p>
+                            </a>
+                        </li>
+                    <?php endwhile; else: ?>
+                    <?php endif; wp_reset_postdata(); ?>
                 </div>
                 <div class="tab-pane" id="guides">
                     <?php
                     $args = array(
                         'post_type'=> 'dt_places',
                         'orderby' => 'post_date',
+                        'posts_per_page' => 4,
                         'order'    => 'DESC'
                     );
 

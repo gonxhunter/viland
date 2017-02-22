@@ -145,6 +145,16 @@ if (!function_exists('sutunam_menu')) {
  */
 require_once( get_template_directory() . '/lib/testimonials.php' );
 
+/**
+ * Add videos
+ */
+require_once( get_template_directory() . '/lib/videos.php' );
+
+/**
+ * Add customer-fields
+ */
+require_once( get_template_directory() . '/lib/customer-fields.php' );
+
 add_action( 'wp_enqueue_scripts','stn_frontend_scripts' );
 add_filter( 'wp_default_editor', create_function('', 'return "tinymce";') );
 /**
