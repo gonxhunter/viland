@@ -2083,13 +2083,21 @@ ol {
   margin-top: 20px;
 }
 
-/* line 462, scss/page/_home.scss */
+/* line 55, scss/_mixin.scss */
+
+.home .travel-info .tab-content:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+/* line 463, scss/page/_home.scss */
 
 .home .travel-info .tab-content .tab-pane {
   display: none;
 }
 
-/* line 464, scss/page/_home.scss */
+/* line 465, scss/page/_home.scss */
 
 .home .travel-info .tab-content .tab-pane.active {
   display: block;
@@ -2097,11 +2105,88 @@ ol {
 
 /* line 469, scss/page/_home.scss */
 
+.home .travel-info .tab-content .tab-pane ul li {
+  float: left;
+  list-style: none;
+  width: -moz-calc((100% - 30px)/4);
+  width: -webkit-calc((100% - 30px)/4);
+  width: calc((100% - 30px)/4);
+}
+
+/* line 473, scss/page/_home.scss */
+
+.home .travel-info .tab-content .tab-pane ul li a {
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding-bottom: 52px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 481, scss/page/_home.scss */
+
+.home .travel-info .tab-content .tab-pane ul li a:hover .info {
+  bottom: 0;
+}
+
+/* line 484, scss/page/_home.scss */
+
+.home .travel-info .tab-content .tab-pane ul li a:hover p:not(.read-more) {
+  background: #07575b;
+}
+
+/* line 489, scss/page/_home.scss */
+
+.home .travel-info .tab-content .tab-pane ul li p {
+  background: #10726e;
+  display: block;
+  font-size: 16px;
+  font-family: "AvenirNextDemiBold";
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 15px 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 498, scss/page/_home.scss */
+
+.home .travel-info .tab-content .tab-pane ul li p.read-more {
+  font-size: 14px;
+}
+
+/* line 502, scss/page/_home.scss */
+
+.home .travel-info .tab-content .tab-pane ul li .info {
+  display: block;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  bottom: -49px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 511, scss/page/_home.scss */
+
+.home .travel-info .tab-content .tab-pane ul li + li {
+  margin-left: 10px;
+}
+
+/* line 517, scss/page/_home.scss */
+
 .home .travel-info .view-all-travel {
   margin-top: 30px;
 }
 
-/* line 474, scss/page/_home.scss */
+/* line 522, scss/page/_home.scss */
 
 .home .selectBox-dropdown-menu {
   -moz-border-radius: 0;
@@ -2113,7 +2198,7 @@ ol {
   background: #106f6c;
 }
 
-/* line 479, scss/page/_home.scss */
+/* line 527, scss/page/_home.scss */
 
 .home .selectBox-dropdown-menu li a {
   color: #ffffff;
@@ -2124,7 +2209,7 @@ ol {
   padding: 10px 20px;
 }
 
-/* line 487, scss/page/_home.scss */
+/* line 535, scss/page/_home.scss */
 
 .home .selectBox-dropdown-menu li.selectBox-hover a,
 .home .selectBox-dropdown-menu li.selectBox-selected a {

@@ -214,8 +214,10 @@ get_header(); ?>
                         <li class="item-blog">
                             <a href="<?php echo get_permalink(get_the_ID())?>">
                                 <?php echo get_the_post_thumbnail(get_the_ID(), array(800,600));?>
-                                <p><?php the_title(); ?></p>
-                                <p class="read-more">Read more</p>
+                               <figure class="info">
+	                               <p><?php the_title(); ?></p>
+	                               <p class="read-more">Read more</p>
+                               </figure>
                             </a>
                         </li>
                     <?php endwhile; else: ?>
@@ -236,8 +238,10 @@ get_header(); ?>
                         <li class="item-video">
                             <a href="<?php echo get_permalink(get_the_ID())?>">
                                 <?php echo get_the_post_thumbnail(get_the_ID(), array(800,600));?>
-                                <p><?php the_title(); ?></p>
-                                <p class="read-more">Read more</p>
+                                <figure class="info">
+	                                <p><?php the_title(); ?></p>
+	                                <p class="read-more">Read more</p>
+                                </figure>
                             </a>
                         </li>
                     <?php endwhile; else: ?>
@@ -258,8 +262,10 @@ get_header(); ?>
                         <li class="guide">
                             <a href="<?php echo get_permalink(get_the_ID())?>">
                                 <?php echo get_the_post_thumbnail(get_the_ID(), array(800,600));?>
-                                <p><?php the_title(); ?></p>
-                                <p class="read-more">Read more</p>
+                                <figure class="info">
+	                                <p><?php the_title(); ?></p>
+	                                <p class="read-more">Read more</p>
+                                </figure>
                             </a>
                         </li>
                     <?php endwhile; else: ?>
