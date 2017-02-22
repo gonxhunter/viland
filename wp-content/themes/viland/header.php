@@ -64,7 +64,7 @@ $jk_options = get_option('redux_demo');
                 <a href="#"><i class="vi-icon-basket"></i></a>
             </li>
             <li class="user">
-                <a href="#"><i class="vi-icon-user"></i></a>
+                <a href="/my-account"><i class="vi-icon-user"></i></a>
             </li>
             <li class="menu-toggle">
                 <a href="#">Menu<i class="vi-icon-menu"></i></a>
