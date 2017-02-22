@@ -203,6 +203,7 @@ get_header(); ?>
                 $args = array(
                     'post_type'=> 'post',
                     'orderby' => 'post_date',
+                    'posts_per_page' => 4,
                     'order'    => 'DESC'
                 );
 
@@ -227,6 +228,7 @@ get_header(); ?>
                 $args = array(
                     'post_type'=> 'dt_places',
                     'orderby' => 'post_date',
+                    'posts_per_page' => 4,
                     'order'    => 'DESC'
                 );
 
