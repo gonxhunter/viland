@@ -1,0 +1,32 @@
+.about-content.container {
+  padding-top: 40px;
+}
+
+.right-about-us {
+  width: 60%;
+  float: left;
+}
+
+.left-about-us {
+  width: 30%;
+  float: left;
+  padding-left: 5%;
+}
+
+.about-us-count {
+  font-size: 25px;
+  font-weight: bold;
+  color: #13887d;
+  padding: 5px;
+}
+
+.info1 {
+  width: 50%;
+  float: left;
+  padding-right: 20px;
+}
+
+.page-template-about-us h3 {
+  color: #13887d;
+}
+
