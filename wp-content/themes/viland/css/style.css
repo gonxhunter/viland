@@ -2026,6 +2026,83 @@ ol {
 
 /* line 428, scss/page/_home.scss */
 
+.home .travel-info {
+  padding: 25px 0;
+}
+
+/* line 55, scss/_mixin.scss */
+
+.home .travel-info .menu-tab-travel:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+/* line 433, scss/page/_home.scss */
+
+.home .travel-info .menu-tab-travel ul li {
+  float: left;
+  list-style: none;
+  width: -moz-calc((100% - 4px)/3);
+  width: -webkit-calc((100% - 4px)/3);
+  width: calc((100% - 4px)/3);
+}
+
+/* line 437, scss/page/_home.scss */
+
+.home .travel-info .menu-tab-travel ul li a {
+  border-bottom: 9px solid #c7c6c6;
+  color: #c7c6c6;
+  display: block;
+  font-size: 18px;
+  font-family: "AvenirNextBold";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+/* line 449, scss/page/_home.scss */
+
+.home .travel-info .menu-tab-travel ul li.active a {
+  border-color: #10726e;
+  color: #10726e;
+}
+
+/* line 455, scss/page/_home.scss */
+
+.home .travel-info .menu-tab-travel ul li + li {
+  margin-left: 2px;
+}
+
+/* line 460, scss/page/_home.scss */
+
+.home .travel-info .tab-content {
+  margin-top: 20px;
+}
+
+/* line 462, scss/page/_home.scss */
+
+.home .travel-info .tab-content .tab-pane {
+  display: none;
+}
+
+/* line 464, scss/page/_home.scss */
+
+.home .travel-info .tab-content .tab-pane.active {
+  display: block;
+}
+
+/* line 469, scss/page/_home.scss */
+
+.home .travel-info .view-all-travel {
+  margin-top: 30px;
+}
+
+/* line 474, scss/page/_home.scss */
+
 .home .selectBox-dropdown-menu {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -2036,7 +2113,7 @@ ol {
   background: #106f6c;
 }
 
-/* line 433, scss/page/_home.scss */
+/* line 479, scss/page/_home.scss */
 
 .home .selectBox-dropdown-menu li a {
   color: #ffffff;
@@ -2047,7 +2124,7 @@ ol {
   padding: 10px 20px;
 }
 
-/* line 441, scss/page/_home.scss */
+/* line 487, scss/page/_home.scss */
 
 .home .selectBox-dropdown-menu li.selectBox-hover a,
 .home .selectBox-dropdown-menu li.selectBox-selected a {

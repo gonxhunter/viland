@@ -425,6 +425,52 @@
         }
     }
 
+    .travel-info {
+        padding: 25px 0;
+        .menu-tab-travel {
+            @include clear-fix();
+            ul {
+                li {
+                    float: left;
+                    list-style: none;
+                    @include calc(width, '(100% - 4px)/3');
+                    a {
+                        border-bottom: 9px solid $c-tab-grey;
+                        color: $c-tab-grey;
+                        display: block;
+                        font-size: 18px;
+                        @include font-style($f-avenir-next-bold);
+                        line-height: 1;
+                        text-align: center;
+                        text-transform: uppercase;
+                        padding: 15px 0;
+                    }
+                    &.active {
+                        a {
+                            border-color: $bg-green;
+                            color: $bg-green;
+                        }
+                    }
+                }
+                li + li {
+                    margin-left: 2px;
+                }
+            }
+        }
+        .tab-content {
+            margin-top: 20px;
+            .tab-pane {
+                display: none;
+                &.active {
+                    display: block;
+                }
+            }
+        }
+        .view-all-travel {
+            margin-top: 30px;
+        }
+    }
+
     .selectBox-dropdown-menu {
         @include border-radius(0);
         @include box-shadow(none);
