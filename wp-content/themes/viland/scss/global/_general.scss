@@ -62,3 +62,10 @@ ul, ol {
         clear: both;
     }
 }
+
+.selectBox-dropdown {
+    vertical-align: top;
+    .selectBox-label {
+        vertical-align: top;
+    }
+}

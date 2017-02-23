@@ -1,0 +1,187 @@
+/* Contact us styles */
+
+.page-template-contact-us {
+    h3 {
+        color: $bg-green;
+        font-size: 22px;
+        line-height: 1;
+        text-align: center;
+        margin: 35px 0;
+    }
+    .contact-form {
+        background: $bg-light-green;
+        margin-bottom: 20px;
+        padding: 30px 30px 0;
+        p {
+            color: $c-grey-green;
+            margin: 0 0 15px;
+        }
+        .frm_forms {
+            fieldset {
+                padding: 0;
+            }
+            .frm_primary_label {
+                display: none;
+            }
+            .selectBox-dropdown {
+                @include border-radius(5px);
+                @include box-shadow(none);
+                background: $bg-green;
+                border: none;
+                line-height: 1;
+                .selectBox-label {
+                    color: $c-white;
+                    @include font-style($f-avenir-next-demibold);
+                    padding: 11px 12px;
+                }
+                .selectBox-arrow {
+                    @include border-radius(2px);
+                    background: $bg-dark-green;
+                    border: none;
+                    width: 36px;
+                    &:before {
+                        content: '>';
+                        display: block;
+                        color: $bg-light-green;
+                        font-size: 16px;
+                        @include font-style($f-avenir-next-bold);
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin: -7px 0 0 -5px;
+                        @include transform(rotate(90deg));
+                    }
+                }
+            }
+            .form-field {
+                clear: left;
+                float: left;
+                @include calc(width, '(100% - 15px)/2', 1);
+                margin-bottom: 15px;
+                &.frm_last_half {
+                    margin-left: 0;
+                }
+                input[type="text"],
+                input[type="email"],
+                select,
+                textarea {
+                    @include border-radius(5px);
+                    @include box-shadow(none);
+                    background: $bg-green;
+                    border: none;
+                    color: $c-white;
+                    @include font-style($f-avenir-next-demibold);
+                    line-height: 1;
+                    height: 36px;
+                    padding: 11px 12px;
+                }
+                textarea {
+                    height: 140px;
+                }
+            }
+            .frm_submit {
+                background: $bg-submit-green;
+                text-align: right;
+                margin: 0 -30px;
+                input[type="submit"] {
+                    @include border-radius(0);
+                    @include box-shadow(none);
+                    background: $bg-button-green;
+                    border: none;
+                    color: $c-button-green;
+                    font-size: 24px;
+                    @include font-style($f-avenir-next-bold);
+                    text-align: center;
+                    text-transform: uppercase;
+                    width: 277px !important;
+                    margin: 0;
+                    padding: 17px;
+                    outline: none;
+                }
+                .frm_ajax_loading {
+                    float: left;
+                    margin: 28px;
+                }
+            }
+        }
+    }
+
+    .contact-info {
+        @include clear-fix();
+        li {
+            float: left;
+            list-style: none;
+            @include calc(width, '(100% - 20px)/4');
+            &.item-large {
+                @include calc(width, '(100% - 20px)/2');
+            }
+            a {
+                display: block;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+            }
+            img {
+                width: auto;
+                height: 220px;
+            }
+            strong {
+                color: $c-white;
+                font-size: 26px;
+                @include font-style($f-avenir-next-bold);
+                line-height: 1;
+                text-transform: uppercase;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 42%;
+                @include transform(translateY(-50%));
+                small {
+                    display: block;
+                    font-size: 16px;
+                    text-transform: none;
+                }
+            }
+            .read-more {
+                background: $c-grey-green;
+                color: $c-white;
+                font-size: 14px;
+                @include font-style($f-avenir-next-bold);
+                text-transform: uppercase;
+                margin: 0;
+                padding: 17px;
+                position: relative;
+            }
+            .vi-icon-phone {
+                font-size: 25px;
+                position: absolute;
+                top: 50%;
+                left: 23%;
+                margin-top: -13px;
+            }
+        }
+        li + li {
+            margin-left: 10px;
+        }
+    }
+
+    .selectBox-dropdown-menu {
+        @include border-radius(0);
+        @include box-shadow(none);
+        background: $bg-green;
+        border: none;
+        li {
+            a {
+                color: $c-white;
+                line-height: 1;
+                padding: 8px 12px;
+            }
+            &.selectBox-hover,
+            &.selectBox-selected {
+                a {
+                    background: $bg-dark-green;
+                }
+            }
+        }
+    }
+}

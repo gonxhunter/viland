@@ -639,6 +639,18 @@ ol {
   clear: both;
 }
 
+/* line 66, scss/global/_general.scss */
+
+.selectBox-dropdown {
+  vertical-align: top;
+}
+
+/* line 68, scss/global/_general.scss */
+
+.selectBox-dropdown .selectBox-label {
+  vertical-align: top;
+}
+
 /* Header styles */
 
 /* line 3, scss/global/_header.scss */
@@ -1319,6 +1331,170 @@ ol {
   padding: 12px;
 }
 
+/* Travel tab styles */
+
+/* line 3, scss/component/_travel-tab.scss */
+
+.travel-info {
+  padding: 25px 0;
+}
+
+/* line 55, scss/_mixin.scss */
+
+.travel-info .menu-tab-travel:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+/* line 8, scss/component/_travel-tab.scss */
+
+.travel-info .menu-tab-travel ul li {
+  float: left;
+  list-style: none;
+  width: -moz-calc((100% - 4px)/3);
+  width: -webkit-calc((100% - 4px)/3);
+  width: calc((100% - 4px)/3);
+}
+
+/* line 12, scss/component/_travel-tab.scss */
+
+.travel-info .menu-tab-travel ul li a {
+  border-bottom: 9px solid #c7c6c6;
+  color: #c7c6c6;
+  display: block;
+  font-size: 18px;
+  font-family: "AvenirNextBold";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+/* line 24, scss/component/_travel-tab.scss */
+
+.travel-info .menu-tab-travel ul li.active a {
+  border-color: #10726e;
+  color: #10726e;
+}
+
+/* line 30, scss/component/_travel-tab.scss */
+
+.travel-info .menu-tab-travel ul li + li {
+  margin-left: 2px;
+}
+
+/* line 35, scss/component/_travel-tab.scss */
+
+.travel-info .tab-content {
+  margin-top: 20px;
+}
+
+/* line 55, scss/_mixin.scss */
+
+.travel-info .tab-content:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+/* line 38, scss/component/_travel-tab.scss */
+
+.travel-info .tab-content .tab-pane {
+  display: none;
+}
+
+/* line 40, scss/component/_travel-tab.scss */
+
+.travel-info .tab-content .tab-pane.active {
+  display: block;
+}
+
+/* line 44, scss/component/_travel-tab.scss */
+
+.travel-info .tab-content .tab-pane ul li {
+  float: left;
+  list-style: none;
+  width: -moz-calc((100% - 30px)/4);
+  width: -webkit-calc((100% - 30px)/4);
+  width: calc((100% - 30px)/4);
+}
+
+/* line 48, scss/component/_travel-tab.scss */
+
+.travel-info .tab-content .tab-pane ul li a {
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding-bottom: 52px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 56, scss/component/_travel-tab.scss */
+
+.travel-info .tab-content .tab-pane ul li a:hover .info {
+  bottom: 0;
+}
+
+/* line 59, scss/component/_travel-tab.scss */
+
+.travel-info .tab-content .tab-pane ul li a:hover p:not(.read-more) {
+  background: #07575b;
+}
+
+/* line 64, scss/component/_travel-tab.scss */
+
+.travel-info .tab-content .tab-pane ul li p {
+  background: #10726e;
+  display: block;
+  font-size: 16px;
+  font-family: "AvenirNextDemiBold";
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 15px 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 73, scss/component/_travel-tab.scss */
+
+.travel-info .tab-content .tab-pane ul li p.read-more {
+  font-size: 14px;
+}
+
+/* line 77, scss/component/_travel-tab.scss */
+
+.travel-info .tab-content .tab-pane ul li .info {
+  display: block;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  bottom: -49px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 86, scss/component/_travel-tab.scss */
+
+.travel-info .tab-content .tab-pane ul li + li {
+  margin-left: 10px;
+}
+
+/* line 92, scss/component/_travel-tab.scss */
+
+.travel-info .view-all-travel {
+  margin-top: 30px;
+}
+
 /* Pages */
 
 /* Home page styles */
@@ -1581,7 +1757,7 @@ ol {
   line-height: 1;
   text-transform: uppercase;
   margin-right: 10px;
-  padding: 20px 20px 13px;
+  padding: 20px 20px 17px;
   outline: none;
 }
 
@@ -2026,168 +2202,6 @@ ol {
 
 /* line 428, scss/page/_home.scss */
 
-.home .travel-info {
-  padding: 25px 0;
-}
-
-/* line 55, scss/_mixin.scss */
-
-.home .travel-info .menu-tab-travel:after {
-  display: block;
-  content: '';
-  clear: both;
-}
-
-/* line 433, scss/page/_home.scss */
-
-.home .travel-info .menu-tab-travel ul li {
-  float: left;
-  list-style: none;
-  width: -moz-calc((100% - 4px)/3);
-  width: -webkit-calc((100% - 4px)/3);
-  width: calc((100% - 4px)/3);
-}
-
-/* line 437, scss/page/_home.scss */
-
-.home .travel-info .menu-tab-travel ul li a {
-  border-bottom: 9px solid #c7c6c6;
-  color: #c7c6c6;
-  display: block;
-  font-size: 18px;
-  font-family: "AvenirNextBold";
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 15px 0;
-}
-
-/* line 449, scss/page/_home.scss */
-
-.home .travel-info .menu-tab-travel ul li.active a {
-  border-color: #10726e;
-  color: #10726e;
-}
-
-/* line 455, scss/page/_home.scss */
-
-.home .travel-info .menu-tab-travel ul li + li {
-  margin-left: 2px;
-}
-
-/* line 460, scss/page/_home.scss */
-
-.home .travel-info .tab-content {
-  margin-top: 20px;
-}
-
-/* line 55, scss/_mixin.scss */
-
-.home .travel-info .tab-content:after {
-  display: block;
-  content: '';
-  clear: both;
-}
-
-/* line 463, scss/page/_home.scss */
-
-.home .travel-info .tab-content .tab-pane {
-  display: none;
-}
-
-/* line 465, scss/page/_home.scss */
-
-.home .travel-info .tab-content .tab-pane.active {
-  display: block;
-}
-
-/* line 469, scss/page/_home.scss */
-
-.home .travel-info .tab-content .tab-pane ul li {
-  float: left;
-  list-style: none;
-  width: -moz-calc((100% - 30px)/4);
-  width: -webkit-calc((100% - 30px)/4);
-  width: calc((100% - 30px)/4);
-}
-
-/* line 473, scss/page/_home.scss */
-
-.home .travel-info .tab-content .tab-pane ul li a {
-  color: #ffffff;
-  display: block;
-  text-align: center;
-  padding-bottom: 52px;
-  position: relative;
-  overflow: hidden;
-}
-
-/* line 481, scss/page/_home.scss */
-
-.home .travel-info .tab-content .tab-pane ul li a:hover .info {
-  bottom: 0;
-}
-
-/* line 484, scss/page/_home.scss */
-
-.home .travel-info .tab-content .tab-pane ul li a:hover p:not(.read-more) {
-  background: #07575b;
-}
-
-/* line 489, scss/page/_home.scss */
-
-.home .travel-info .tab-content .tab-pane ul li p {
-  background: #10726e;
-  display: block;
-  font-size: 16px;
-  font-family: "AvenirNextDemiBold";
-  font-style: normal;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 15px 0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-/* line 498, scss/page/_home.scss */
-
-.home .travel-info .tab-content .tab-pane ul li p.read-more {
-  font-size: 14px;
-}
-
-/* line 502, scss/page/_home.scss */
-
-.home .travel-info .tab-content .tab-pane ul li .info {
-  display: block;
-  width: 100%;
-  margin: 0;
-  position: absolute;
-  bottom: -49px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-/* line 511, scss/page/_home.scss */
-
-.home .travel-info .tab-content .tab-pane ul li + li {
-  margin-left: 10px;
-}
-
-/* line 517, scss/page/_home.scss */
-
-.home .travel-info .view-all-travel {
-  margin-top: 30px;
-}
-
-/* line 522, scss/page/_home.scss */
-
 .home .selectBox-dropdown-menu {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -2198,7 +2212,7 @@ ol {
   background: #106f6c;
 }
 
-/* line 527, scss/page/_home.scss */
+/* line 433, scss/page/_home.scss */
 
 .home .selectBox-dropdown-menu li a {
   color: #ffffff;
@@ -2209,9 +2223,319 @@ ol {
   padding: 10px 20px;
 }
 
-/* line 535, scss/page/_home.scss */
+/* line 441, scss/page/_home.scss */
 
 .home .selectBox-dropdown-menu li.selectBox-hover a,
 .home .selectBox-dropdown-menu li.selectBox-selected a {
   background: #13887d;
+}
+
+/* Contact us styles */
+
+/* line 4, scss/page/_contact.scss */
+
+.page-template-contact-us h3 {
+  color: #10726e;
+  font-size: 22px;
+  line-height: 1;
+  text-align: center;
+  margin: 35px 0;
+}
+
+/* line 11, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form {
+  background: #13887d;
+  margin-bottom: 20px;
+  padding: 30px 30px 0;
+}
+
+/* line 15, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form p {
+  color: #0f666b;
+  margin: 0 0 15px;
+}
+
+/* line 20, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms fieldset {
+  padding: 0;
+}
+
+/* line 23, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .frm_primary_label {
+  display: none;
+}
+
+/* line 26, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .selectBox-dropdown {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: #10726e;
+  border: none;
+  line-height: 1;
+}
+
+/* line 32, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .selectBox-dropdown .selectBox-label {
+  color: #ffffff;
+  font-family: "AvenirNextDemiBold";
+  font-style: normal;
+  font-weight: normal;
+  padding: 11px 12px;
+}
+
+/* line 37, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .selectBox-dropdown .selectBox-arrow {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #07575b;
+  border: none;
+  width: 36px;
+}
+
+/* line 42, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .selectBox-dropdown .selectBox-arrow:before {
+  content: '>';
+  display: block;
+  color: #13887d;
+  font-size: 16px;
+  font-family: "AvenirNextBold";
+  font-style: normal;
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -7px 0 0 -5px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 56, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .form-field {
+  clear: left;
+  float: left;
+  width: -moz-calc((100% - 15px)/2) !important;
+  width: -webkit-calc((100% - 15px)/2) !important;
+  width: calc((100% - 15px)/2) !important;
+  margin-bottom: 15px;
+}
+
+/* line 61, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .form-field.frm_last_half {
+  margin-left: 0;
+}
+
+/* line 64, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .form-field input[type="text"],
+.page-template-contact-us .contact-form .frm_forms .form-field input[type="email"],
+.page-template-contact-us .contact-form .frm_forms .form-field select,
+.page-template-contact-us .contact-form .frm_forms .form-field textarea {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: #10726e;
+  border: none;
+  color: #ffffff;
+  font-family: "AvenirNextDemiBold";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  height: 36px;
+  padding: 11px 12px;
+}
+
+/* line 78, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .form-field textarea {
+  height: 140px;
+}
+
+/* line 82, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .frm_submit {
+  background: #0e8076;
+  text-align: right;
+  margin: 0 -30px;
+}
+
+/* line 86, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .frm_submit input[type="submit"] {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: #106e6b;
+  border: none;
+  color: #12887d;
+  font-size: 24px;
+  font-family: "AvenirNextBold";
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  width: 277px !important;
+  margin: 0;
+  padding: 17px;
+  outline: none;
+}
+
+/* line 101, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .frm_submit .frm_ajax_loading {
+  float: left;
+  margin: 28px;
+}
+
+/* line 55, scss/_mixin.scss */
+
+.page-template-contact-us .contact-info:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+/* line 111, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-info li {
+  float: left;
+  list-style: none;
+  width: -moz-calc((100% - 20px)/4);
+  width: -webkit-calc((100% - 20px)/4);
+  width: calc((100% - 20px)/4);
+}
+
+/* line 115, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-info li.item-large {
+  width: -moz-calc((100% - 20px)/2);
+  width: -webkit-calc((100% - 20px)/2);
+  width: calc((100% - 20px)/2);
+}
+
+/* line 118, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-info li a {
+  display: block;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 124, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-info li img {
+  width: auto;
+  height: 220px;
+}
+
+/* line 128, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-info li strong {
+  color: #ffffff;
+  font-size: 26px;
+  font-family: "AvenirNextBold";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 42%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 139, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-info li strong small {
+  display: block;
+  font-size: 16px;
+  text-transform: none;
+}
+
+/* line 145, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-info li .read-more {
+  background: #0f666b;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "AvenirNextBold";
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 17px;
+  position: relative;
+}
+
+/* line 155, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-info li .vi-icon-phone {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 23%;
+  margin-top: -13px;
+}
+
+/* line 163, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-info li + li {
+  margin-left: 10px;
+}
+
+/* line 168, scss/page/_contact.scss */
+
+.page-template-contact-us .selectBox-dropdown-menu {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: #10726e;
+  border: none;
+}
+
+/* line 174, scss/page/_contact.scss */
+
+.page-template-contact-us .selectBox-dropdown-menu li a {
+  color: #ffffff;
+  line-height: 1;
+  padding: 8px 12px;
+}
+
+/* line 181, scss/page/_contact.scss */
+
+.page-template-contact-us .selectBox-dropdown-menu li.selectBox-hover a,
+.page-template-contact-us .selectBox-dropdown-menu li.selectBox-selected a {
+  background: #07575b;
 }

@@ -1,0 +1,95 @@
+/* Travel tab styles */
+
+.travel-info {
+    padding: 25px 0;
+    .menu-tab-travel {
+        @include clear-fix();
+        ul {
+            li {
+                float: left;
+                list-style: none;
+                @include calc(width, '(100% - 4px)/3');
+                a {
+                    border-bottom: 9px solid $c-tab-grey;
+                    color: $c-tab-grey;
+                    display: block;
+                    font-size: 18px;
+                    @include font-style($f-avenir-next-bold);
+                    line-height: 1;
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding: 15px 0;
+                }
+                &.active {
+                    a {
+                        border-color: $bg-green;
+                        color: $bg-green;
+                    }
+                }
+            }
+            li + li {
+                margin-left: 2px;
+            }
+        }
+    }
+    .tab-content {
+        margin-top: 20px;
+        @include clear-fix();
+        .tab-pane {
+            display: none;
+            &.active {
+                display: block;
+            }
+            ul {
+                li {
+                    float: left;
+                    list-style: none;
+                    @include calc(width, '(100% - 30px)/4');
+                    a {
+                        color: $c-white;
+                        display: block;
+                        text-align: center;
+                        padding-bottom: 52px;
+                        position: relative;
+                        overflow: hidden;
+                        &:hover {
+                            .info {
+                                bottom: 0;
+                            }
+                            p:not(.read-more) {
+                                background: $bg-dark-green;
+                            }
+                        }
+                    }
+                    p {
+                        background: $bg-green;
+                        display: block;
+                        font-size: 16px;
+                        @include font-style($f-avenir-next-demibold);
+                        text-transform: uppercase;
+                        margin: 0;
+                        padding: 15px 0;
+                        @include transition();
+                        &.read-more {
+                            font-size: 14px;
+                        }
+                    }
+                    .info {
+                        display: block;
+                        width: 100%;
+                        margin: 0;
+                        position: absolute;
+                        bottom: -49px;
+                        @include transition();
+                    }
+                }
+                li + li {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .view-all-travel {
+        margin-top: 30px;
+    }
+}
