@@ -22,6 +22,19 @@
             }
         },
 
+        scrollDown: function() {
+            var scrollBtn = $('.scroll-down'),
+                findTour = $('.find-tour');
+            if(scrollBtn.length) {
+                scrollBtn.on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: findTour.offset().top
+                    }, 500);
+                });
+            }
+        },
+
         customSelect: function() {
             var select = $('select');
             if(select.length) {
@@ -49,6 +62,22 @@
                     slide: 'li'
                 });
             }
+        },
+
+        travelTab: function() {
+            var tabLink = $('.menu-tab-travel a'),
+                tabContent = $('.tab-content');
+            if(tabLink.length) {
+                tabLink.on('click', function(e) {
+                    e.preventDefault();
+                    tabLink.closest('li').removeClass('active');
+                    $(this).closest('li').addClass('active');
+
+                    var tabItem = $(this).attr('href');
+                    tabContent.children('.tab-pane').removeClass('active');
+                    tabContent.children(tabItem).addClass('active');
+                });
+            }
         }
     };
 
@@ -56,6 +85,9 @@
     $(window).ready(function() {
         // Nav menu
         customJS.navMenu();
+
+        // Scroll down
+        customJS.scrollDown();
 
         // Custom select
         customJS.customSelect();
@@ -68,6 +100,9 @@
 
         // Testimonial slider
         customJS.testimonialSlider();
+
+        // Travel tab
+        customJS.travelTab();
     });
 
     // Window resize function //

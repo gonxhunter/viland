@@ -1500,13 +1500,33 @@ ol {
   transition: all 0.3s ease;
 }
 
-/* line 86, scss/component/_travel-tab.scss */
+/* line 87, scss/component/_travel-tab.scss */
+
+.travel-info .tab-content .tab-pane ul li.item-video a:before {
+  content: '\e921';
+  display: block;
+  color: #ffffff;
+  font-size: 64px;
+  font-family: 'Viland-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  margin: -32px 0 0 -32px;
+}
+
+/* line 101, scss/component/_travel-tab.scss */
 
 .travel-info .tab-content .tab-pane ul li + li {
   margin-left: 10px;
 }
 
-/* line 92, scss/component/_travel-tab.scss */
+/* line 107, scss/component/_travel-tab.scss */
 
 .travel-info .view-all-travel {
   margin-top: 30px;

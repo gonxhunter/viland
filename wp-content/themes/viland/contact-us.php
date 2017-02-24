@@ -83,7 +83,7 @@ get_header(); ?>
 					$args = array(
 						'post_type'=> 'video',
 						'orderby' => 'post_date',
-						'posts_per_page' => 3,
+						'posts_per_page' => 4,
 						'order'    => 'DESC'
 					);
 

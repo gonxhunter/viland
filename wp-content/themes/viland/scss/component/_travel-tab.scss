@@ -82,6 +82,21 @@
                         bottom: -49px;
                         @include transition();
                     }
+                    &.item-video {
+                        a {
+                            &:before {
+                                content: '\e921';
+                                display: block;
+                                color: $c-white;
+                                font-size: 64px;
+                                @include icon-font();
+                                position: absolute;
+                                top: 42%;
+                                left: 50%;
+                                margin: -32px 0 0 -32px;
+                            }
+                        }
+                    }
                 }
                 li + li {
                     margin-left: 10px;

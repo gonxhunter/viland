@@ -228,7 +228,7 @@ get_header(); ?>
                     $args = array(
                         'post_type'=> 'video',
                         'orderby' => 'post_date',
-                        'posts_per_page' => 3,
+                        'posts_per_page' => 4,
                         'order'    => 'DESC'
                     );
 
@@ -240,7 +240,7 @@ get_header(); ?>
                                 <?php echo get_the_post_thumbnail(get_the_ID(), array(800,600));?>
                                 <figure class="info">
 	                                <p><?php the_title(); ?></p>
-	                                <p class="read-more">Read more</p>
+	                                <p class="read-more">View more</p>
                                 </figure>
                             </a>
                         </li>
