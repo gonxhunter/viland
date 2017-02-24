@@ -613,19 +613,28 @@ ol {
 
 #wrapper {
   min-height: 100%;
-  max-width: 1366px;
+  max-width: 100%;
   margin: 0 auto;
+  margin-bottom: -318px;
   overflow-x: hidden;
 }
 
-/* line 51, scss/global/_general.scss */
+/* line 50, scss/global/_general.scss */
+
+#wrapper:after {
+  content: '';
+  display: block;
+  height: 318px;
+}
+
+/* line 57, scss/global/_general.scss */
 
 .container {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-/* line 57, scss/global/_general.scss */
+/* line 63, scss/global/_general.scss */
 
 .clear-fix:before,
 .clear-fix:after {
@@ -633,19 +642,19 @@ ol {
   display: table;
 }
 
-/* line 61, scss/global/_general.scss */
+/* line 67, scss/global/_general.scss */
 
 .clear-fix:after {
   clear: both;
 }
 
-/* line 66, scss/global/_general.scss */
+/* line 72, scss/global/_general.scss */
 
 .selectBox-dropdown {
   vertical-align: top;
 }
 
-/* line 68, scss/global/_general.scss */
+/* line 74, scss/global/_general.scss */
 
 .selectBox-dropdown .selectBox-label {
   vertical-align: top;
@@ -658,24 +667,32 @@ ol {
 #header {
   background: #10726e;
   height: 98px;
+}
+
+/* line 6, scss/global/_header.scss */
+
+#header .header-container {
+  height: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
   padding: 0 75px;
   position: relative;
 }
 
-/* line 8, scss/global/_header.scss */
+/* line 13, scss/global/_header.scss */
 
 #header .logo {
   float: left;
   padding: 31px 0;
 }
 
-/* line 11, scss/global/_header.scss */
+/* line 16, scss/global/_header.scss */
 
 #header .logo img {
   width: 171px;
 }
 
-/* line 15, scss/global/_header.scss */
+/* line 20, scss/global/_header.scss */
 
 #header .nav-menu {
   float: left;
@@ -683,13 +700,13 @@ ol {
   margin-left: 30px;
 }
 
-/* line 19, scss/global/_header.scss */
+/* line 24, scss/global/_header.scss */
 
 #header .nav-menu ul {
   font-size: 0;
 }
 
-/* line 21, scss/global/_header.scss */
+/* line 26, scss/global/_header.scss */
 
 #header .nav-menu ul li {
   display: inline-block;
@@ -697,7 +714,7 @@ ol {
   list-style: none;
 }
 
-/* line 25, scss/global/_header.scss */
+/* line 30, scss/global/_header.scss */
 
 #header .nav-menu ul li a {
   display: inline-block;
@@ -712,7 +729,7 @@ ol {
   position: relative;
 }
 
-/* line 34, scss/global/_header.scss */
+/* line 39, scss/global/_header.scss */
 
 #header .nav-menu ul li a:after {
   content: '';
@@ -734,14 +751,14 @@ ol {
   transition: all 0.3s ease;
 }
 
-/* line 52, scss/global/_header.scss */
+/* line 57, scss/global/_header.scss */
 
 #header .nav-menu ul li.hovered > a:after {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
-/* line 56, scss/global/_header.scss */
+/* line 61, scss/global/_header.scss */
 
 #header .nav-menu ul li.hovered .sub-menu {
   z-index: 1;
@@ -749,7 +766,7 @@ ol {
   filter: alpha(opacity=100);
 }
 
-/* line 62, scss/global/_header.scss */
+/* line 67, scss/global/_header.scss */
 
 #header .nav-menu ul.sub-menu {
   background: #07575b;
@@ -768,14 +785,14 @@ ol {
   transition: opacity 0.3s ease;
 }
 
-/* line 73, scss/global/_header.scss */
+/* line 78, scss/global/_header.scss */
 
 #header .nav-menu ul.sub-menu li {
   width: 33.333%;
   padding: 10px 30px;
 }
 
-/* line 76, scss/global/_header.scss */
+/* line 81, scss/global/_header.scss */
 
 #header .nav-menu ul.sub-menu li a {
   font-size: 15px;
@@ -785,7 +802,7 @@ ol {
   padding: 0;
 }
 
-/* line 80, scss/global/_header.scss */
+/* line 85, scss/global/_header.scss */
 
 #header .nav-menu ul.sub-menu li a:after {
   background: #06373a;
@@ -797,33 +814,33 @@ ol {
   left: 0;
 }
 
-/* line 89, scss/global/_header.scss */
+/* line 94, scss/global/_header.scss */
 
 #header .nav-menu ul.sub-menu li a:hover {
   color: #06373a;
 }
 
-/* line 91, scss/global/_header.scss */
+/* line 96, scss/global/_header.scss */
 
 #header .nav-menu ul.sub-menu li a:hover:after {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
-/* line 100, scss/global/_header.scss */
+/* line 105, scss/global/_header.scss */
 
 #header .header-link {
   float: right;
   padding: 30px 0;
 }
 
-/* line 103, scss/global/_header.scss */
+/* line 108, scss/global/_header.scss */
 
 #header .header-link ul {
   font-size: 0;
 }
 
-/* line 105, scss/global/_header.scss */
+/* line 110, scss/global/_header.scss */
 
 #header .header-link ul li {
   display: inline-block;
@@ -837,13 +854,13 @@ ol {
   text-transform: uppercase;
 }
 
-/* line 113, scss/global/_header.scss */
+/* line 118, scss/global/_header.scss */
 
 #header .header-link ul li a {
   color: #ffffff;
 }
 
-/* line 116, scss/global/_header.scss */
+/* line 121, scss/global/_header.scss */
 
 #header .header-link ul li .vi-icon-phone,
 #header .header-link ul li .vi-icon-basket,
@@ -851,13 +868,13 @@ ol {
   font-size: 28px;
 }
 
-/* line 122, scss/global/_header.scss */
+/* line 127, scss/global/_header.scss */
 
 #header .header-link ul li .vi-icon-menu {
   font-size: 24px;
 }
 
-/* line 125, scss/global/_header.scss */
+/* line 130, scss/global/_header.scss */
 
 #header .header-link ul li.phone {
   margin-right: 35px;
@@ -865,7 +882,7 @@ ol {
   position: relative;
 }
 
-/* line 129, scss/global/_header.scss */
+/* line 134, scss/global/_header.scss */
 
 #header .header-link ul li.phone .vi-icon-phone {
   position: absolute;
@@ -874,26 +891,26 @@ ol {
   margin-top: -14px;
 }
 
-/* line 135, scss/global/_header.scss */
+/* line 140, scss/global/_header.scss */
 
 #header .header-link ul li.phone span {
   display: block;
   line-height: 1.4;
 }
 
-/* line 140, scss/global/_header.scss */
+/* line 145, scss/global/_header.scss */
 
 #header .header-link ul li.basket {
   margin-right: 15px;
 }
 
-/* line 143, scss/global/_header.scss */
+/* line 148, scss/global/_header.scss */
 
 #header .header-link ul li.menu-toggle {
   display: none;
 }
 
-/* line 145, scss/global/_header.scss */
+/* line 150, scss/global/_header.scss */
 
 #header .header-link ul li.menu-toggle .vi-icon-menu {
   display: inline-block;
@@ -907,7 +924,7 @@ ol {
 
 #footer .footer-container {
   background: #0e6a68;
-  max-width: 1366px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -1268,7 +1285,7 @@ ol {
 
 #ub_global_footer_content {
   background: #0d6361;
-  max-width: 1366px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 14px 0;
 }

@@ -45,7 +45,13 @@ ul, ol {
     min-height: 100%;
     max-width: $wrapper-width;
     margin: 0 auto;
+    margin-bottom: -$footer-height;
     overflow-x: hidden;
+    &:after {
+        content: '';
+        display: block;
+        height: $footer-height;
+    }
 }
 
 .container {

@@ -47,30 +47,32 @@ $jk_options = get_option('redux_demo');
 <body <?php body_class('no-sidebar'); ?> <?php language_attributes(); ?>>
 <div id="wrapper">
 <header id="header">
-    <div class="logo">
-        <a href="<?php echo home_url(); ?>" title="Viland"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt=""/></a>
-    </div>
-    <div class="nav-menu">
-        <?php sutunam_menu('top-menu'); ?>
-    </div>
-    <div class="header-link">
-        <ul>
-            <li class="phone">
-                <i class="vi-icon-phone"></i>
-                <span>VN HOTLINE&nbsp;&nbsp;&nbsp;+84 (0) 1633 744 951</span>
-                <span>EN HOTLINE&nbsp;&nbsp;&nbsp;+84 (0) 7452 081 173</span>
-            </li>
-            <li class="basket">
-                <a href="#"><i class="vi-icon-basket"></i></a>
-            </li>
-            <li class="user">
-                <a href="/my-account"><i class="vi-icon-user"></i></a>
-            </li>
-            <li class="menu-toggle">
-                <a href="#">Menu<i class="vi-icon-menu"></i></a>
-            </li>
-        </ul>
-    </div>
+	<div class="header-container">
+		<div class="logo">
+			<a href="<?php echo home_url(); ?>" title="Viland"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt=""/></a>
+		</div>
+		<div class="nav-menu">
+			<?php sutunam_menu('top-menu'); ?>
+		</div>
+		<div class="header-link">
+			<ul>
+				<li class="phone">
+					<i class="vi-icon-phone"></i>
+					<span>VN HOTLINE&nbsp;&nbsp;&nbsp;+84 (0) 1633 744 951</span>
+					<span>EN HOTLINE&nbsp;&nbsp;&nbsp;+84 (0) 7452 081 173</span>
+				</li>
+				<li class="basket">
+					<a href="#"><i class="vi-icon-basket"></i></a>
+				</li>
+				<li class="user">
+					<a href="/my-account"><i class="vi-icon-user"></i></a>
+				</li>
+				<li class="menu-toggle">
+					<a href="#">Menu<i class="vi-icon-menu"></i></a>
+				</li>
+			</ul>
+		</div>
+	</div>
 </header>
 <div id="container">
 

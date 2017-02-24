@@ -3,8 +3,13 @@
 #header {
     background: $bg-green;
     height: 98px;
-    padding: 0 75px;
-    position: relative;
+    .header-container {
+        height: 100%;
+        max-width: $header-width;
+        margin: 0 auto;
+        padding: 0 75px;
+        position: relative;
+    }
     .logo {
         float: left;
         padding: 31px 0;
