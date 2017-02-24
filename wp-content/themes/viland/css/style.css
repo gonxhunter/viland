@@ -2344,22 +2344,44 @@ ol {
 
 /* line 56, scss/page/_contact.scss */
 
-.page-template-contact-us .contact-form .frm_forms .form-field {
-  clear: left;
+.page-template-contact-us .contact-form .frm_forms .frm_form_left,
+.page-template-contact-us .contact-form .frm_forms .frm_form_right {
   float: left;
-  width: -moz-calc((100% - 15px)/2) !important;
-  width: -webkit-calc((100% - 15px)/2) !important;
-  width: calc((100% - 15px)/2) !important;
-  margin-bottom: 15px;
+  width: -moz-calc((100% - 15px)/2);
+  width: -webkit-calc((100% - 15px)/2);
+  width: calc((100% - 15px)/2);
 }
 
 /* line 61, scss/page/_contact.scss */
 
-.page-template-contact-us .contact-form .frm_forms .form-field.frm_last_half {
-  margin-left: 0;
+.page-template-contact-us .contact-form .frm_forms .frm_form_right {
+  margin-left: 15px;
 }
 
 /* line 64, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .form-field {
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* line 68, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .form-field.frm_first_half,
+.page-template-contact-us .contact-form .frm_forms .form-field.frm_last_half {
+  width: -moz-calc((100% - 15px)/2);
+  width: -webkit-calc((100% - 15px)/2);
+  width: calc((100% - 15px)/2);
+}
+
+/* line 72, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .form-field.frm_last_half {
+  margin-left: 15px;
+}
+
+/* line 75, scss/page/_contact.scss */
 
 .page-template-contact-us .contact-form .frm_forms .form-field input[type="text"],
 .page-template-contact-us .contact-form .frm_forms .form-field input[type="email"],
@@ -2382,13 +2404,49 @@ ol {
   padding: 11px 12px;
 }
 
-/* line 78, scss/page/_contact.scss */
+/* line 137, scss/_mixin.scss */
 
-.page-template-contact-us .contact-form .frm_forms .form-field textarea {
-  height: 140px;
+.page-template-contact-us .contact-form .frm_forms .form-field input[type="text"] ::-webkit-input-placeholder,
+.page-template-contact-us .contact-form .frm_forms .form-field input[type="email"] ::-webkit-input-placeholder,
+.page-template-contact-us .contact-form .frm_forms .form-field select ::-webkit-input-placeholder,
+.page-template-contact-us .contact-form .frm_forms .form-field textarea ::-webkit-input-placeholder {
+  color: #ffffff;
 }
 
-/* line 82, scss/page/_contact.scss */
+/* line 140, scss/_mixin.scss */
+
+.page-template-contact-us .contact-form .frm_forms .form-field input[type="text"] :-moz-placeholder,
+.page-template-contact-us .contact-form .frm_forms .form-field input[type="email"] :-moz-placeholder,
+.page-template-contact-us .contact-form .frm_forms .form-field select :-moz-placeholder,
+.page-template-contact-us .contact-form .frm_forms .form-field textarea :-moz-placeholder {
+  color: #ffffff;
+}
+
+/* line 143, scss/_mixin.scss */
+
+.page-template-contact-us .contact-form .frm_forms .form-field input[type="text"] ::-moz-placeholder,
+.page-template-contact-us .contact-form .frm_forms .form-field input[type="email"] ::-moz-placeholder,
+.page-template-contact-us .contact-form .frm_forms .form-field select ::-moz-placeholder,
+.page-template-contact-us .contact-form .frm_forms .form-field textarea ::-moz-placeholder {
+  color: #ffffff;
+}
+
+/* line 146, scss/_mixin.scss */
+
+.page-template-contact-us .contact-form .frm_forms .form-field input[type="text"] :-ms-input-placeholder,
+.page-template-contact-us .contact-form .frm_forms .form-field input[type="email"] :-ms-input-placeholder,
+.page-template-contact-us .contact-form .frm_forms .form-field select :-ms-input-placeholder,
+.page-template-contact-us .contact-form .frm_forms .form-field textarea :-ms-input-placeholder {
+  color: #ffffff;
+}
+
+/* line 92, scss/page/_contact.scss */
+
+.page-template-contact-us .contact-form .frm_forms .form-field textarea {
+  height: 138px;
+}
+
+/* line 96, scss/page/_contact.scss */
 
 .page-template-contact-us .contact-form .frm_forms .frm_submit {
   background: #0e8076;
@@ -2396,7 +2454,7 @@ ol {
   margin: 0 -30px;
 }
 
-/* line 86, scss/page/_contact.scss */
+/* line 100, scss/page/_contact.scss */
 
 .page-template-contact-us .contact-form .frm_forms .frm_submit input[type="submit"] {
   -moz-border-radius: 0;
@@ -2420,7 +2478,7 @@ ol {
   outline: none;
 }
 
-/* line 101, scss/page/_contact.scss */
+/* line 115, scss/page/_contact.scss */
 
 .page-template-contact-us .contact-form .frm_forms .frm_submit .frm_ajax_loading {
   float: left;
@@ -2435,7 +2493,7 @@ ol {
   clear: both;
 }
 
-/* line 111, scss/page/_contact.scss */
+/* line 125, scss/page/_contact.scss */
 
 .page-template-contact-us .contact-info li {
   float: left;
@@ -2445,7 +2503,7 @@ ol {
   width: calc((100% - 20px)/4);
 }
 
-/* line 115, scss/page/_contact.scss */
+/* line 129, scss/page/_contact.scss */
 
 .page-template-contact-us .contact-info li.item-large {
   width: -moz-calc((100% - 20px)/2);
@@ -2453,7 +2511,7 @@ ol {
   width: calc((100% - 20px)/2);
 }
 
-/* line 118, scss/page/_contact.scss */
+/* line 132, scss/page/_contact.scss */
 
 .page-template-contact-us .contact-info li a {
   display: block;
@@ -2462,14 +2520,14 @@ ol {
   overflow: hidden;
 }
 
-/* line 124, scss/page/_contact.scss */
+/* line 138, scss/page/_contact.scss */
 
 .page-template-contact-us .contact-info li img {
   width: auto;
   height: 220px;
 }
 
-/* line 128, scss/page/_contact.scss */
+/* line 142, scss/page/_contact.scss */
 
 .page-template-contact-us .contact-info li strong {
   color: #ffffff;
@@ -2490,7 +2548,7 @@ ol {
   transform: translateY(-50%);
 }
 
-/* line 139, scss/page/_contact.scss */
+/* line 153, scss/page/_contact.scss */
 
 .page-template-contact-us .contact-info li strong small {
   display: block;
@@ -2498,7 +2556,7 @@ ol {
   text-transform: none;
 }
 
-/* line 145, scss/page/_contact.scss */
+/* line 159, scss/page/_contact.scss */
 
 .page-template-contact-us .contact-info li .read-more {
   background: #0f666b;
@@ -2513,7 +2571,7 @@ ol {
   position: relative;
 }
 
-/* line 155, scss/page/_contact.scss */
+/* line 169, scss/page/_contact.scss */
 
 .page-template-contact-us .contact-info li .vi-icon-phone {
   font-size: 25px;
@@ -2523,13 +2581,13 @@ ol {
   margin-top: -13px;
 }
 
-/* line 163, scss/page/_contact.scss */
+/* line 177, scss/page/_contact.scss */
 
 .page-template-contact-us .contact-info li + li {
   margin-left: 10px;
 }
 
-/* line 168, scss/page/_contact.scss */
+/* line 182, scss/page/_contact.scss */
 
 .page-template-contact-us .selectBox-dropdown-menu {
   -moz-border-radius: 0;
@@ -2542,7 +2600,7 @@ ol {
   border: none;
 }
 
-/* line 174, scss/page/_contact.scss */
+/* line 188, scss/page/_contact.scss */
 
 .page-template-contact-us .selectBox-dropdown-menu li a {
   color: #ffffff;
@@ -2550,7 +2608,7 @@ ol {
   padding: 8px 12px;
 }
 
-/* line 181, scss/page/_contact.scss */
+/* line 195, scss/page/_contact.scss */
 
 .page-template-contact-us .selectBox-dropdown-menu li.selectBox-hover a,
 .page-template-contact-us .selectBox-dropdown-menu li.selectBox-selected a {

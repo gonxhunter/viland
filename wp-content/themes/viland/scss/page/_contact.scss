@@ -53,13 +53,24 @@
                     }
                 }
             }
-            .form-field {
-                clear: left;
+            .frm_form_left,
+            .frm_form_right {
                 float: left;
-                @include calc(width, '(100% - 15px)/2', 1);
+                @include calc(width, '(100% - 15px)/2');
+            }
+            .frm_form_right {
+                margin-left: 15px;
+            }
+            .form-field {
+                float: left;
+                width: 100%;
                 margin-bottom: 15px;
+                &.frm_first_half,
                 &.frm_last_half {
-                    margin-left: 0;
+                    @include calc(width, '(100% - 15px)/2');
+                }
+                &.frm_last_half {
+                    margin-left: 15px;
                 }
                 input[type="text"],
                 input[type="email"],
@@ -74,9 +85,12 @@
                     line-height: 1;
                     height: 36px;
                     padding: 11px 12px;
+                    @include input-placeholder {
+                        color: $c-white;
+                    }
                 }
                 textarea {
-                    height: 140px;
+                    height: 138px;
                 }
             }
             .frm_submit {
